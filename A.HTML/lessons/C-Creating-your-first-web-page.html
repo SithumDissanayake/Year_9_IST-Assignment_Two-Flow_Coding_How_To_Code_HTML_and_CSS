@@ -20,6 +20,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 		<!--Font Used Is Source Code Pro from Google Font and are Found at: https://fonts.google.com/specimen/Source+Code+Pro-->
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<!--This is Animate.css framework and can be found at: https://daneden.github.io/animate.css/-->
+		<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet"/>
 		<!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -47,7 +49,7 @@
 			</div>
 		</nav>
 		<!--Second Navbar-->
-				<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
+		<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#secondnavbar">
@@ -72,69 +74,98 @@
 		<!--Main Sign-->
 		<div class="shadowblack textwhite jumbotron text-center">
 			<div class="jumbotron-content">
-			<h1>Creating Your First Web Page!</h1>
+				<h1>Creating Your First Web Page!</h1>
 			</div>
 		</div>
-<div class="pagecontent bg-white">
-	<!--MainContent-->
-		<div class= "container-fluid bg-grey textwhite text-justify">
-			<h3>
-				Let’s create your first ever webpage. First you will need a text editor to code out HTML. We would recommend that you install <a href="https://atom.io/"><span style="text-decoration:underline; color:#25CCF7;">atom.io</span></a> as your text editor to code HTML as it is free and easy to use. Next, install and open atom. You will find a  Make save a file to your computer with the extension “.html” and get ready to code! </h3>
+		<div class="pagecontent bg-white">
+			<!--MainContent-->
+			<div class= "container-fluid bg-grey textwhite text-justify">
+				<h3>
+					Let’s create your first ever webpage. First you will need a text editor to code out HTML. We would recommend that you install <a href="https://atom.io/"><span style="text-decoration:underline; color:#25CCF7;">atom.io</span></a> as your text editor to code HTML as it is free and easy to use. Next, install and open atom. You will find a  Make save a file to your computer with the extension “.html” and get ready to code! 
+				</h3>
 			</div>
-				<div class="container-fluid">
-				For a start, we will need to use the <code>&lt;html&gt;</code> tag to allow the text editor know that we are using HTML from that point on. The HTML tag must be finished off by another HTML tag like this.
-
-		
-			
-			<pre> &lt;html&gt;
-	&lt;!-- Your code would go here. This “&lt;!-- --&gt;” tag denotes a comment that will not be shown on the website.--&gt;
-&lt;/html&gt;
-			  </pre>
-			<p>
-				Next we will add the <code>&lt;head&gt;</code>. This tag links files and provides extra information about the webpage. Your webpage should now look like this:
-			</p>
-			<pre>
+			<div class="table-responsive container-fluid text-center">
+				<table class="table table-bordered table-hover">
+					<caption class="text-center">All The Tags Used in This Lesson and Their Definitions</caption>
+					<thead class="text-justify">
+						<tr>
+							<th>Tags</th>
+							<th>Definition</th>
+						</tr>
+					</thead>
+					<tbody class="text-justify">
+						<tr>
+							<td><code>&lt;!DOCTYPE html&gt;</code></td>
+							<td>The <code>!DOCTYPE html</code> this tag is a declaration that makes this document HTML5.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;html&gt;</code>...<code>&lt;/html&gt;</code></td>
+							<td>The <code>html</code> tag tells the browser that this is an HTML document. It represents the root of an HTML document and it is the container for all other HTML elements.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;head&gt;</code>...<code>&lt;/head&gt;</code></td>
+							<td>The <code>head</code> element is a container for all the head elements. It can include a title for the document, scripts, styles, meta information, and more.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;title&gt;</code>...<code>&lt;/title&gt;</code></td>
+							<td>The <code>title</code> tag is required in all HTML documents and it defines the title of the document. It also defines a title in the browser toolbar, provides a title for the page when it is added to favorites and displays a title for the page in search-engine results.
+							</td>
+						</tr>
+						<tr>
+							<td><code>&lt;body&gt;</code>...<code>&lt;/body&gt;</code></td>
+							<td>The <code>body</code> tag defines the document's body. It contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;h1&gt;</code>...<code>&lt;/h1&gt;</code></td>
+							<td>The <code>h1</code> The &lt;h1&gt; tag are used to define HTML headings. &lt;h1&gt; defines the most important heading.</td>
+						</tr>
+						<tr>
+							<td><code>&lt;p&gt;</code>...<code>&lt;/p&gt;</code></td>
+							<td>The <code>p</code> tag defines a paragraph.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="container-fluid bg-grey textwhite text-justify">
+				<p>For a start, we will need to use the <code>&lt;html&gt;</code> tag to allow the text editor know that we are using HTML from that point on. The HTML tag must be finished off by another HTML tag like this.</p>
+				<pre>
 &lt;html&gt;
-	&lt;!-- The 'head' tag should be contained inside the 'html' tag, as all the HTML code goes inside here... --&t;
+	&lt;!--This is where the HTML code goes. This code does not necessarily have to be displayed on the website--&gt;
+&lt;/html&gt;</pre>
+				<p>
+					Next we will add the <code>&lt;head&gt;</code>. This tag links files and provides extra information about the webpage. Your webpage should now look like this:
+				</p>
+				<pre>
+&lt;html&gt;
+	&lt;!-- The 'head' tag should be contained inside the 'html' tag, as all the HTML code goes inside here--&t;
 	&lt;head&gt;
-		&lt;!-- This is where the content in the 'head' code goes --&gt;
+		&lt;!-- This is where the content in the 'head' code goes--&gt;
+		&lt;title&gt;My First Website&lt;/title&gt;
 	&lt;/head&gt;
 &lt;/html&gt;
 </pre>
-			<p>Finally we will add the <code>&lt;body&gt;</code> tag. This shows what will be displayed on the webpage. Your webpage should now finally look like this:</p>
-			<pre>
+				<p>Finally we will add the <code>&lt;body&gt;</code> tag. This shows what will be displayed on the webpage. Your webpage should now finally look like this:</p>
+								<pre>
 &lt;html&gt;
 	&lt;!-- The 'head' tag should be contained inside the 'html' tag, as all the HTML code goes inside here... --&gt;
 	&lt;head&gt;
 		&lt;!-- This is where the content in the 'head' code goes --&gt;
 	&lt;/head&gt;
+	    &lt;body&gt;
+            &lt;!-- This is where the content in the 'body' code goes --&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph&lt;/p&gt;
+    &lt;p&gt;This is another paragraph&lt;/p&gt;
+
+  &lt;/body&gt;
 &lt;/html&gt;
  </pre>
-			<p>Common HTML tags include the:
-				<code>&lt;!DOCTYPE&gt;</code> Defines the document type
-				<code>&lt;html&gt;</code> Defines an HTML document
-				<code>&lt;head&gt;</code> Defines information about the document
-				<code>&lt;title&gt;</code> Defines a title for the document
-				<code>&lt;body&gt;</code> Defines the content that is to be displayed
-				<code>&lt;h1&gt;</code> to
-				<code>&lt;h6&gt;</code> Defines a heading
-				<code>&lt;p&gt;</code> Defines a paragraph
-				<code>&lt;br/&gt;</code> Inserts a single line break
-				So without further ado let’s get something in your body to show up on the webpage. First let’s add a title to your webpage. Next let’s add a heading to your webpage as well as a paragraph. Your .html file 
-			</p>
-			<pre>
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;title&gt;My First Ever Web Page!&lt;/title&gt;
-	&lt;/head&gt;
-	&lt;body&gt;
-		&lt;h1&gt;Hello World! Welcome to My First Ever Website!&lt;/h1&gt;
-		&lt;p&gt;This is a website made by finely coded, pure HTML. (You can add any other text you want...)&lt;/p&gt;
-	&lt;/body&gt;
-&lt;/html&gt;
-	</pre>
-		</div>
-
+<p data-height="350" data-theme-id="dark" data-slug-hash="zjWoaa" data-default-tab="html,result" data-user="SithumD" data-embed-version="2" data-pen-title="Assignment 2-FirstWebsite" class="codepen">See the Pen <a href="https://codepen.io/SithumD/pen/zjWoaa/">Assignment 2-FirstWebsite</a> by Sithum Dissanayake (<a href="https://codepen.io/SithumD">@SithumD</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+				<p class="text-center">and BOOM!, You have just Created Your first web page!</p>
+			</div>
+			<div class="container-fluid">
+			</div>
 			<!--Footer/Glossary-->
 			<div class="container-fluid text-center bg-grey textwhite">
 				<div class="row">

@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>FlowCoding-HowToCodeHTML-CommonHTMLTags</title>
+		<title>FlowCoding-HowToCodeHTML-ListsandTables</title>
 		<meta charset="UTF-8">
 		<!--CSS-->
 		<link rel="stylesheet" href="../../styles/sub-html-style.css"/>
@@ -59,9 +59,9 @@
 				<div class="navbar-collapse collapse" id="secondnavbar">
 					<ul class="nav navbar-nav navbar-right nav-pills">
 						<li><a href="C-Creating-your-first-web-page.html">Your First Web Page</a></li>
-						<li class="active"><a href="D-Common-HTML-tags.html">Common HTML Tags</a></li>
+						<li><a href="D-Common-HTML-tags.html">Common HTML Tags</a></li>
 						<li><a href="E-Images.html">Images</a></li>
-						<li><a href="F-Tables.html">Tables</a></li>
+						<li class="active"><a href="F-Tables.html">Tables</a></li>
 						<li><a href="G-XHTML-1_0-Strict-Validation.html">XHTML Validation</a></li>
 						<li><a href="H-Multi-page-websites.html">Multi Pages</a></li>
 						<li><a href="I-File-organisation.html">File Organisation</a></li>
@@ -72,15 +72,18 @@
 		<!--Main Sign-->
 		<div class="shadowblack textwhite jumbotron text-center">
 			<div class="jumbotron-content">
-				<h1>Common HTML Tags!</h1>
+				<h1>Lists and Tables in HTML!</h1>
 			</div>
 		</div>
 		<div class="pagecontent bg-white">
 			<!--MainContent-->
-			<div class= "container-fluid bg-grey textwhite text-justify">
-				<h3>
-					Here you will begin to learn the first steps of basic HTML tags! You will learn what tags such as the <code>h</code> tag into your <code>body</code>, as well as your <code>head</code> by linking up your page with the <code>a</code> tag. Here you will have a wide list of many different tags. Many Convineint. <img src="../../images/Doge.jpg" alt="Doge" height="50" width="50">
-				</h3>
+			<div class= "container-fluid bg-grey textwhite text-center">
+				<h2>
+					Introductions to Lists and Tables
+				</h2>
+				<h4 class="text-justify">
+					Lists are good from a structural point of view as they help create a well-structured, more accessible, easy-to-maintain document. They are also useful because they provide specialized elements to which you can attach CSS styles. Finally, lists help visitors read your web site, and they simplify maintenance when your pages need to be updated. Tables are also an extremely neat way to organise information for your consumer. :-)
+				</h4>
 			</div>
 			<div class="table-responsive container-fluid text-center">
 				<table class="table table-bordered table-hover">
@@ -93,72 +96,95 @@
 					</thead>
 					<tbody class="text-justify">
 						<tr>
-							<td><code>&lt;!DOCTYPE html&gt;</code></td>
-							<td>The <code>!DOCTYPE html</code> tag is a declaration that defines this document to be HTML5.</td>
+							<td><code>&lt;ol&gt;</code>...<code>&lt;/ol&gt;</code></td>
+							<td>The <code>ol</code> tag defines an ordered list. An ordered list can be numerical or alphabetical.</td>
 						</tr>
 						<tr>
-							<td><code>&lt;html&gt;</code>...<code>&lt;/html&gt;</code></td>
-							<td>The <code>html</code> tag tells the browser that this is an HTML document. It represents the root of an HTML document and it is the container for all other HTML elements.</td>
+							<td><code>&lt;ul&gt;</code>...<code>&lt;/ul&gt;</code></td>
+							<td>The <code>ul</code> tag defines an unordered (bulleted) list.</td>
 						</tr>
 						<tr>
-							<td><code>&lt;head&gt;</code>...<code>&lt;/head&gt;</code></td>
-							<td>The <code>head</code> element is a container for all the head elements. It can include a title for the document, scripts, styles, meta information, and more.</td>
+							<td><code>&lt;li&gt;</code>...<code>&lt;/li&gt;</code></td>
+							<td>The <code>li</code> tag defines a list item. The <code>li</code> tag is used in ordered lists(<code>ol</code>), unordered lists (<code>ul</code>).</td>
 						</tr>
 						<tr>
-							<td><code>&lt;title&gt;</code>...<code>&lt;/title&gt;</code></td>
-							<td>The <code>title</code> tag is required in all HTML documents and it defines the title of the document. It also defines a title in the browser toolbar, provides a title for the page when it is added to favorites and displays a title for the page in search-engine results.
+							<td><code>&lt;table&gt;</code>...<code>&lt;/table&gt;</code></td>
+							<td>The <code>table</code> tag defines an HTML table. An HTML table consists of the <code>table</code> element and one or more <code>tr</code>, <code>th</code>, and <code>td</code> elements. A more complex HTML table may also include <code>col</code>, <code>colgroup</code>, <code>thead</code>, <code>tbody</code> and <code>tfoot</code> elements.
 							</td>
 						</tr>
 						<tr>
-							<td><code>&lt;link type="text/..." rel="..." href="..."&gt;</code></td>
-							<td>The <code>link</code> tag defines a link between a document and an external resource. The <code>link</code> tag is used to link to external style sheets and javascript resources.
-							</td>
+							<td><code>&lt;caption&gt;</code>...<code>&lt;/caption&gt;</code></td>
+							<td>The <code>caption</code> tag defines a table caption (title). The <code>caption</code> tag must be inserted immediately after the <code>table</code> tag.</td>
 						</tr>
 						<tr>
-							<td><code>&lt;body&gt;</code>...<code>&lt;/body&gt;</code></td>
-							<td>The <code>body</code> tag defines the document's body. It contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.</td>
+							<td><code>&lt;tr&gt;</code>...<code>&lt;/tr&gt;</code></td>
+							<td>The <code>tr</code> tag defines a row in an HTML table. A <code>tr</code> element contains one or more <code>th</code> or <code>td</code> elements.</td>
 						</tr>
 						<tr>
-							<td><code>&lt;!--...--&gt;</code></td>
-							<td>The <code>&lt;!--...--&gt;</code> tag is used to insert comments in the source code. Comments are not displayed in the browsers.
-								You can use comments to explain your code, which can help you when you edit the source code at a later date.</td>
+							<td><code>&lt;th&gt;</code>...<code>&lt;/th&gt;</code></td>
+							<td>The <code>th</code> tag defines a header cell in an HTML table. The header cells contain header information (created with the <code>th</code> element). The text in <code>th</code> elements are bold and centered by default.</td>
 						</tr>
 						<tr>
-							<td><code>&lt;h1&gt;</code>...<code>&lt;/h1&gt;</code> - <code>&lt;h6&gt;</code>...<code>&lt;/h6&gt;</code></td>
-							<td>The <code>h1</code> to <code>h6</code> tags are used to define HTML headings.
-								<code>h1</code> defines the most important heading. <code>h6</code> defines the least important heading.</td>
+							<td><code>&lt;td&gt;</code>...<code>&lt;/td&gt;</code></td>
+							<td>The <code>td</code> tag defines a standard cell in an HTML table. The standard cells contain data (created with the <code>td</code> element).The text in <code>td</code> elements are regular and left-aligned by default.</td>
 						</tr>
 						<tr>
-							<td><code>&lt;p&gt;</code>...<code>&lt;/p&gt;</code></td>
-							<td>The <code>p</code> tag defines a paragraph.</td>
+							<td><code>&lt;colspan="..."&gt;</code></td>
+							<td>The <code>colspan</code> attribute defines the number of columns a cell should span.</td>
 						</tr>
 						<tr>
-							<td><code>&lt;br/&gt;</code></td>
-							<td>The <code>br</code> tag inserts a single line break. The <code>br</code> tag is an empty tag which means that it has no end tag.</td>
-						</tr>
-						<tr>
-							<td><code>&lt;strong&gt;</code>...<code>&lt;/strong&gt;</code></td>
-							<td>The <code>strong</code> tag is a phrase tag. It makes the text bolded.</td>
-						</tr>
-						<tr>
-							<td><code>&lt;em&gt;</code>...<code>&lt;/em&gt;</code></td>
-							<td>The <code>em</code> tag is a phrase tag. It makes the text italicised.</td>
-						</tr>
-						<tr>
-							<td><code>&lt;a href="..."&gt;</code>...<code>&lt;/a&gt;</code></td>
-							<td>The <code>a</code> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <code>a</code> element is the <code>href</code> attribute, which indicates the link's destination.</td>
-						</tr>
-						<tr>
-							<td><code>&lt;div&gt;</code>...<code>&lt;/div&gt;</code></td>
-							<td>The <code>div</code> tag defines a division or a section in an HTML document. The <code>div</code> element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.</td>
+							<td><code>&lt;rowspan="..."&gt;</code></td>
+							<td>The <code>rowspan</code> attribute specifies the number of rows a cell should span.</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-			<div class="container-fluid bg-grey textwhite text-justify">
-				<h1 class=text-center>This is an example of all of the Common HTML Tags used above!</h1>
+			<div class= "container-fluid bg-grey textwhite text-justify">
+				<p>
+					An HTML table is defined with the <code>&lt;table&gt;</code> tag. This tag shows. Each table row is defined with the <code>&lt;tr&gt;</code> tag This will show columns you are using. A table header is defined with the <code>&lt;th&gt;</code> tag. By default, table headings are bold and centered. A table data/cell is defined with the <code>&lt;td&gt;</code> tag. This is to show what comes inside your <code>&lt;tr&gt;</code> tag. For an example:
+
+				</p>
+				<div class="text-center">
+					<img class="text-center" src="../../images/Table.png" alt="Table" >
+				</div>
 				<br/>
-				<p data-height="731" data-theme-id="dark" data-slug-hash="qYKqWm" data-default-tab="html,result" data-user="SithumD" data-embed-version="2" data-pen-title="CommonHTMLTags Demo" class="codepen">See the Pen <a href="https://codepen.io/SithumD/pen/qYKqWm/">CommonHTMLTags Demo</a> by Sithum Dissanayake (<a href="https://codepen.io/SithumD">@SithumD</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+				<p>
+					Looks like this:
+				</p>
+
+				<pre>
+&lt;table style="width:100%"&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Firstname&lt;/th&gt;
+		&lt;th&gt;Lastname&lt;/th&gt;
+		&lt;th&gt;Age&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Jill&lt;/td&gt;
+		&lt;td&gt;Smith&lt;/td&gt;
+		&lt;td&gt;50&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Eve&lt;/td&gt;
+		&lt;td&gt;Jackson&lt;/td&gt;
+		&lt;td&gt;94&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+
+				<h3>
+					An unordered list starts with the <code>&lt;ul&gt;</code> tag. Each list item starts with the <code>&lt;li&gt;</code> tag. Ordered lists on the other hand start with <code>&lt;ol&gt;</code>. For an example, this:
+				</h3>
+				<div class="text-center">
+				<img src="../../images/Lists.png" alt="Lists">
+				</div>
+<h3>
+	is coded like this:
+					</h3>
+		<pre>
+		
+		</pre>
+				<p data-height="1325" data-theme-id="dark" data-slug-hash="NMzpoE" data-default-tab="html,result" data-user="SithumD" data-embed-version="2" data-pen-title="listsandtables" class="codepen">See the Pen <a href="https://codepen.io/SithumD/pen/NMzpoE/">listsandtables</a> by Sithum Dissanayake (<a href="https://codepen.io/SithumD">@SithumD</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 				<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 			</div>
 			<div class="container-fluid text-justify">

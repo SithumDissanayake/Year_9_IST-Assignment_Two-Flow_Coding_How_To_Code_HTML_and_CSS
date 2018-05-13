@@ -21,11 +21,41 @@
 		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 		<!--Font Used Is Source Code Pro from Google Font and are Found at: https://fonts.google.com/specimen/Source+Code+Pro-->
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-		<link href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css" rel="stylesheet">
+		<!--This is Animate.css framework and can be found at: https://daneden.github.io/animate.css/-->
+		<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet"/>
 		<!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!--This is jQuery from Google CDN and can be found at: https://developers.google.com/speed/libraries/-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 	</head>
 	<body id="#" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -54,10 +84,8 @@
 				<div class="jumbotron-content">
 				<h1>Flow Coding</h1>
 				<p>Code With The Flow</p>
-				<a href="#introductions">
-				<img class="down-arrow" src="images/down-arrow.png" alt="downarrow"/>
-				</a>
-					</div>
+				<a href="#introductions"><img class="down-arrow animated infinite pulse" src="images/down-arrow.png" alt="downarrow"/></a>
+			</div>
 			</div>
 			<div class="pagecontent">
 			<!--Intro To Flow Coding and What It Will Teach-->
@@ -74,7 +102,7 @@
 								<h2>The World Wide Web</h2>
 							</div>
 							<div class="www-panel-body">
-								<h4>The World Wide Web (known as the WWW) is an space where documents and other web resources are identified by Uniform Resource Locators (URLs). These resources are linked through the use of hypertext links. These links are found from networks which link up the whole entire web to what we know as the internet. These networks aid search engines to find different urls to be seen by the consumer.</h4>
+								<h4>The World Wide Web (known as the WWW) is an space where documents and other web resources are identified by Uniform Resource Locators (URLs). These resources are linked through the use of hypertext links. These links are found from networks which link up the whole entire web to what we know as the internet. These networks aid search engines to find different URLs to be seen by the consumer. It is important to know that this is not a synonym for the Internet. The World Wide Web, or just "the Web," as ordinary people call it, is a subgroup of the Internet. The Web consists of pages that can be accessed using a Web browser. The Internet is the actual network of networks where all the information resides. With hypertext, a word or phrase can contain a link to another Web site. All Web pages are written in the hypertext markup language (HTML), which works in conjunction with HTTP.</h4>
 								
 							</div>
 						</div>
