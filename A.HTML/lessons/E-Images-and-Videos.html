@@ -1,4 +1,4 @@
-<!--
+x<!--
 // This project is submitted as part of the assessment for Year 9 IST.
 // This is all our own work. We have referenced any work used from other
 // sources and have not plagiarised the work of others.
@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>FlowCoding-HowToCodeHTML-Images</title>
+		<title>FlowCoding-HowToCodeHTML-ImagesandVideos</title>
 		<meta charset="UTF-8">
 		<!--CSS-->
 		<link rel="stylesheet" href="../../styles/sub-html-style.css"/>
@@ -16,17 +16,14 @@
 		<!--Favicon (Converter Used: http://www.favicomatic.com)-->
 		<link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
-		<!--Font Used Is Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito-->
-		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-		<!--Font Used Is Source Code Pro from Google Font and are Found at: https://fonts.google.com/specimen/Source+Code+Pro-->
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<!--Font Used Is Anonymous Pro and Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito + https://fonts.google.com/specimen/Anonymous+Pro-->	
+		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Nunito" rel="stylesheet">		
 		<!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-
 		<!--Navbar-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -40,7 +37,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="mainNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="../../index.html#introductions">Introductions</a></li>
+						<li><a href="../../index.html#mainintroductions">Introductions</a></li>
 						<li class="active"><a href="../../A.HTML/index.html">Learn How to Code: HTML</a></li>
 						<li><a href="../../B.CSS/index.html">Learn How to Code: CSS</a></li>
 					</ul>
@@ -59,10 +56,10 @@
 				</div>
 				<div class="navbar-collapse collapse" id="secondnavbar">
 					<ul class="nav navbar-nav navbar-right nav-pills">
-						<li><a href="C-Creating-your-first-web-page.html">Your First Web Page</a></li>
+						<li><a href="C-Creating-your-first-web-page.html">First Page</a></li>
 						<li><a href="D-Common-HTML-tags.html">Common HTML Tags</a></li>
-						<li class="active"><a href="E-Images.html">Images</a></li>
-						<li><a href="F-Lists-and-Tables.html">Tables</a></li>
+						<li class="active"><a href="E-Images-and-Videos.html">Images &amp; Videos</a></li>
+						<li><a href="F-Lists-and-Tables.html">Lists &amp; Tables</a></li>
 						<li><a href="G-XHTML-1_0-Strict-Validation.html">XHTML Validation</a></li>
 						<li><a href="H-Multi-page-websites.html">Multi Pages</a></li>
 						<li><a href="I-File-organisation.html">File Organisation</a></li>
@@ -71,7 +68,7 @@
 			</div>
 		</nav>
 		<!--Main Sign-->
-		<div class="shadowblack textwhite jumbotron text-center">
+		<div class="shadowblack textwhite jumbotron text-center animated fadeInUp">
 			<div class="jumbotron-content">
 				<h1>Images in HTML!</h1>
 			</div>
@@ -97,31 +94,37 @@
 							<td><code>&lt;img ... /&gt;</code></td>
 							<td>The <code>img</code> states the use of a image</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td><code>src="..."</code></td>
 							<td>The <code>src</code> Source tells us where the image is coming from. e.g. neatpic.jpg or a url.</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td><code>alt="..."</code>...</td>
 							<td>The <code>alt</code> attribute is a alternative to what should be there if the image is corrupted or not found</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td><code>height</code>...</td>
 							<td>The <code>height</code> attribute is to allow for the change of height of the image
 							</td>
 						</tr>
-						<tr>
+						<tr class="warning">
 							<td><code>width</code>...</td>
 							<td>The <code>width</code> attribute is to allow for the change of width of the image. Self Explanatory.</td>
 						</tr>
-
-
+						<tr>
+							<td><code>&lt;img ... /&gt;</code></td>
+							<td>The <code>img</code> states the use of a image</td>
+						</tr>
+						<tr>
+							<td><code>&lt;object width="..." height="..." data="..."&gt;&lt;/object&gt;</code></td>
+							<td>The <code>object</code> tag defines an embedded object within an HTML document. Use this element to embed media (like Youtube Video, Audio, Video, Java Applets, ActiveX, PDF and Flash) in your web pages.</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div class="container-fluid bg-grey textwhite text-center">
 				<h2>
-					The Basics...
+					The Basics with Images...
 				</h2>
 				<div class="text-justify">
 					<h3>
@@ -142,11 +145,33 @@
 					<pre>
 &lt;img src="image.png/jpg/gif" alt="alternative" img src="smiley.gif" alt="Smiley face" height="42" width="42"&gt;
 </pre>
+					<br/>		
+					<h3 class="text-center">
+						You are also able to embed Video by using the <code>object</code> Tag.
+					</h3>
+					<h3>
+						Using the <code>object</code> tag like this:
+					</h3>
+					<pre>
+&lt;object data='https://www.youtube.com/watch?v=w3jLJU7DT5E'&gt;&lt;/object&gt;
+</pre>
+					<h3>
+						This will embed a youtube video into you page. But by using it like this:
+					</h3>
+					<pre>
+&lt;object data='video.mp4'&gt;&lt;/object&gt;
+</pre>
+					<h3>
+						This will embed local video files. By using the <code>Width</code> and <code>Height</code> attibute you are able to resize the video as you want.
+					</h3>
+					<pre>
+&lt;object width="510" height="340" data='https://www.youtube.com/watch?v=w3jLJU7DT5E'&gt;&lt;/object&gt;
+</pre>
 					<h3 class="text-center">
 						Well Done! You now officially now how to put DANK images into your website. The flow is strong. Also here is an example of it:
 					</h3>
 					<br/>
-					<p data-height="551" data-theme-id="dark" data-slug-hash="GdGWJr" data-default-tab="html,result" data-user="SithumD" data-embed-version="2" data-pen-title="Imagesflowcoding" class="codepen">See the Pen <a href="https://codepen.io/SithumD/pen/GdGWJr/">Imagesflowcoding</a> by Sithum Dissanayake (<a href="https://codepen.io/SithumD">@SithumD</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					<p data-height="825" data-theme-id="dark" data-slug-hash="GdGWJr" data-default-tab="html,result" data-user="SithumD" data-embed-version="2" data-pen-title="Imagesflowcoding" class="codepen">See the Pen <a href="https://codepen.io/SithumD/pen/GdGWJr/">Imagesflowcoding</a> by Sithum Dissanayake (<a href="https://codepen.io/SithumD">@SithumD</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 					<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 				</div>
 			</div>
@@ -156,7 +181,6 @@
 			<div class="container-fluid text-center bg-grey textwhite">
 				<div class="row">
 					<h6>
-						<br/>
 						<strong>Contact Us:</strong>
 					</h6>
 					<h6>
@@ -178,7 +202,7 @@
 							<h5>CSS Main Page</h5>
 						</a>
 						<a href="../../All-together.html">
-							<h5>Making Your Own Website With Everything You Have Learned</h5>
+							<h5>Final Activity</h5>
 						</a>
 					</div>
 					<div class="col-sm-4 text-center">
@@ -189,11 +213,11 @@
 						<a href="../../A.HTML/lessons/D-Common-HTML-tags.html">
 							<h5>Common HTML Tags</h5>
 						</a>
-						<a href="../../A.HTML/lessons/E-Images.html">
-							<h5>Images</h5>
+						<a href="../../A.HTML/lessons/E-Images-and-Videos.html">
+							<h5>Images and Videos</h5>
 						</a>
 						<a href="../../A.HTML/lessons/F-Lists-and-Tables.html">
-							<h5>Tables</h5>
+							<h5>Lists and Tables</h5>
 						</a>
 						<a href="../../A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
 							<h5>XHTML 1.0 Strict Validation</h5>

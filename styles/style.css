@@ -71,7 +71,7 @@
 	position: absolute;
 	display: block;
 	top: 50vh;
-	left:48.5%;
+	left:48%;
 	transform: translate(-50%, -50%);
 	z-index: -1 !important;
 }
@@ -221,11 +221,13 @@ a:active {
 }
 
 pre{
-	display: inline-block !important;
-	padding: 10px !important;
-	margin: 10px 0 20px 0 !important;
-	font-family: 'Source Code Pro', monospace !important;
-
+	display: inline-block;
+	padding: 10px;
+	margin: 10px 0 20px 0;
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 0.8em;
+    white-space: pre;
+    word-wrap: normal;
 }
 
 .padding{

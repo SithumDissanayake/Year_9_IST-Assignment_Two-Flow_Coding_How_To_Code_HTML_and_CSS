@@ -1,33 +1,31 @@
 <!--
-   // This project is submitted as part of the assessment for Year 9 IST.
-   // This is all our own work. We have referenced any work used from other
-   // sources and have not plagiarised the work of others.
-   // (signed) Daniel Pan, Sithum Dissanayake
-   -->
+// This project is submitted as part of the assessment for Year 9 IST.
+// This is all our own work. We have referenced any work used from other
+// sources and have not plagiarised the work of others.
+// (signed) Daniel Pan, Sithum Dissanayake
+-->
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>FlowCoding-HowToCodeCSS-CommonCSSStyles</title>
-      <meta charset="UTF-8">
-      <!--CSS-->
-      <link rel="stylesheet" href="../../styles/sub-css-style.css"/>
-      <!--Javascript-->
-      <script src="../../scripts/script.js"></script>
-      <!--Favicon (Converter Used: http://www.favicomatic.com)-->
-      <link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
-      <link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
-      <!--Font Used Is Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito-->
-      <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-	   <!--Font Used Is Source Code Pro from Google Font and are Found at: https://fonts.google.com/specimen/Source+Code+Pro-->
-	  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-      <!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   </head>
-   <body>
+	<head>
+		<title>FlowCoding-HowToCodeCSS-CommonCSSStyles</title>
+		<meta charset="UTF-8">
+		<!--CSS-->
+		<link rel="stylesheet" href="../../styles/sub-css-style.css"/>
+		<!--Javascript-->
+		<script src="../../scripts/script.js"></script>
+		<!--Favicon (Converter Used: http://www.favicomatic.com)-->
+		<link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
+		<!--Font Used Is Anonymous Pro and Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito + https://fonts.google.com/specimen/Anonymous+Pro-->	
+		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Nunito" rel="stylesheet">		
+		<!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
 
-				<!--Navbar-->
+		<!--Navbar-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -40,7 +38,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="mainNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="../../index.html#introductions">Introductions</a></li>
+						<li><a href="../../index.html#mainintroductions">Introductions</a></li>
 						<li><a href="../../A.HTML/index.html">Learn How to Code: HTML</a></li>
 						<li class="active"><a href="../../B.CSS/index.html">Learn How to Code: CSS</a></li>
 					</ul>
@@ -48,7 +46,7 @@
 			</div>
 		</nav>
 		<!--Second Navbar-->
-				<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
+		<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#secondnavbar">
@@ -68,24 +66,74 @@
 			</div>
 
 		</nav>
-	   		<!--Main Sign-->
-		<div class="shadowblack textwhite jumbotron text-center">
+		<!--Main Sign-->
+		<div class="shadowblack textwhite jumbotron text-center animated fadeInUp">
 			<div class="jumbotron-content">
-			<h1>Common CSS Styles</h1>
+				<h1>Common CSS Styles</h1>
 			</div>
 		</div>
-	   <div class="pagecontent bg-white">
-	<!--MainContent-->
-		   <div class= "container-fluid bg-grey textwhite text-justify">
-			   
-		   </div>
-		   	<div class= "container-fluid text-justify">
-		   </div>
+		<div class="pagecontent bg-white">
+			<!--MainContent-->
+			<div class= "container-fluid bg-grey textwhite text-justify">
+		<p>
+		CSS styles are often in this format:
+					</p>
+				<pre>
+				h1 {
+	color: maroon;
+	margin-left: 40px;
+}</pre>
+				<p>
+					Now you might be thinking "What does this mean?" As you can see, the <code>h1</code> tag (selector) is meant to be in a maroon colour (note the US english spelling in the code) and have a margin to the left side with a space of 40 pixels. The “color” and “margin-left” is the property, where the “maroon” and “40px” shows the value of the property. Together the two parts is called a declaration. This is the most basic format of css. There are many more kinds of CSS tags that can be used alter the look of the HTML tag.
+				</p>
+							</div>
+<div class="table-responsive container-fluid text-center">
+				<table class="table table-bordered table-hover">
+					<caption class="text-center">All Common CSS Tags</caption>
+					<thead class="text-justify">
+						<tr>
+							<th>Tags</th>
+							<th>Definition</th>
+						</tr>
+					</thead>
+					<tbody class="text-justify">
+						<tr>
+							<td><code>color</code></td>
+							<td>The <code>color</code> tag defines an what colour the selector should be.</td>
+						</tr>
+						<tr>
+							<td><code>font-size</code></td>
+							<td>The <code>font-size</code> tag defines how big the text of the selector should be</td>
+						</tr>
+						<tr>
+							<td><code>font-family</code></td>
+							<td>The <code>font-family</code> tag defines a list item. The <code>li</code> tag is tells what kind of font the selector will be.</td>
+						</tr>
+						<tr>
+							<td><code>width</code></td>
+							<td>The <code>width</code> tag adjusts the width of the selector.
+							</td>
+						</tr>
+						<tr>
+							<td><code>height</code></td>
+							<td>The <code>height</code> tag adjusts the height of the selector.
+							</td>
+						</tr>
+						<tr>
+							<td><code>background-color</code></td>
+							<td>The <code>background-color</code> sets you a nice background colour to your selector. Woa!</td>
+						</tr>
+						<tr>
+							<td><code>border</code></td>
+							<td>The <code>border</code> tag set up a neat boarder to your selector.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 			<!--Footer/Glossary-->
 			<div class="container-fluid text-center bg-grey textwhite">
 				<div class="row">
 					<h6>
-						<br/>
 						<strong>Contact Us:</strong>
 					</h6>
 					<h6>
@@ -107,7 +155,7 @@
 							<h5>CSS Main Page</h5>
 						</a>
 						<a href="../../All-together.html">
-							<h5>Making Your Own Website With Everything You Have Learned</h5>
+							<h5>Final Activity</h5>
 						</a>
 					</div>
 					<div class="col-sm-4 text-center">
@@ -118,11 +166,11 @@
 						<a href="../../A.HTML/lessons/D-Common-HTML-tags.html">
 							<h5>Common HTML Tags</h5>
 						</a>
-						<a href="../../A.HTML/lessons/E-Images.html">
-							<h5>Images</h5>
+						<a href="../../A.HTML/lessons/E-Images-and-Videos.html">
+							<h5>Images and Videos</h5>
 						</a>
 						<a href="../../A.HTML/lessons/F-Lists-and-Tables.html">
-							<h5>Tables</h5>
+							<h5>Lists and Tables</h5>
 						</a>
 						<a href="../../A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
 							<h5>XHTML 1.0 Strict Validation</h5>
@@ -153,7 +201,7 @@
 				<br/>
 				<h4 class="footer-company-name textwhite">Flow Coding &copy; 2018</h4>
 			</div>
-		   	   </div>
+		</div>
 
-   </body>
+	</body>
 </html>

@@ -16,10 +16,8 @@
 		<!--Favicon (Converter Used: http://www.favicomatic.com)-->
 		<link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
-		<!--Font Used Is Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito-->
-		<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-		<!--Font Used Is Source Code Pro from Google Font and are Found at: https://fonts.google.com/specimen/Source+Code+Pro-->
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<!--Font Used Is Anonymous Pro and Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito + https://fonts.google.com/specimen/Anonymous+Pro-->	
+		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Nunito" rel="stylesheet">		
 		<!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -58,10 +56,10 @@
 				</div>
 				<div class="navbar-collapse collapse" id="secondnavbar">
 					<ul class="nav navbar-nav navbar-right nav-pills">
-						<li><a href="C-Creating-your-first-web-page.html">Your First Web Page</a></li>
+						<li><a href="C-Creating-your-first-web-page.html">First Page</a></li>
 						<li><a href="D-Common-HTML-tags.html">Common HTML Tags</a></li>
-						<li><a href="E-Images.html">Images</a></li>
-						<li class="active"><a href="F-Lists-and-Tables.html">Tables</a></li>
+						<li><a href="E-Images-and-Videos.html">Images &amp; Videos</a></li>
+						<li class="active"><a href="F-Lists-and-Tables.html">Lists &amp; Tables</a></li>
 						<li><a href="G-XHTML-1_0-Strict-Validation.html">XHTML Validation</a></li>
 						<li><a href="H-Multi-page-websites.html">Multi Pages</a></li>
 						<li><a href="I-File-organisation.html">File Organisation</a></li>
@@ -70,7 +68,7 @@
 			</div>
 		</nav>
 		<!--Main Sign-->
-		<div class="shadowblack textwhite jumbotron text-center">
+		<div class="shadowblack textwhite jumbotron text-center animated fadeInUp">
 			<div class="jumbotron-content">
 				<h1>Lists and Tables in HTML!</h1>
 			</div>
@@ -78,12 +76,9 @@
 		<div class="pagecontent bg-white">
 			<!--MainContent-->
 			<div class= "container-fluid bg-grey textwhite text-center">
-				<h2>
-					Introductions to Lists and Tables
-				</h2>
-				<h4 class="text-justify">
+				<h3 class="text-justify">
 					Lists are good from a structural point of view as they help create a well-structured, more accessible, easy-to-maintain document. They are also useful because they provide specialized elements to which you can attach CSS styles. Finally, lists help visitors read your web site, and they simplify maintenance when your pages need to be updated. Tables are also an extremely neat way to organise information for your consumer. :-)
-				</h4>
+				</h3>
 			</div>
 			<div class="table-responsive container-fluid text-center">
 				<table class="table table-bordered table-hover">
@@ -171,7 +166,56 @@
 	&lt;/tr&gt;
 &lt;/table&gt;
 </pre>
-
+			<p>
+				<br/>
+				To make a cell span more than one column, use the <code>&lt;colspan&gt;</code> attribute:
+			</p>
+			<pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th colspan="2"&gt;Telephone&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bill Gates&lt;/td&gt;
+    &lt;td&gt;55577854&lt;/td&gt;
+    &lt;td&gt;55577855&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+				<p>
+					Will look like this:
+				</p>
+				<div class="text-center">
+				<img src="../../images/colspan.png" alt="Colspan">
+				</div>
+				<br/>
+				<br/>
+				<p>
+					Likewise, to make a cell span more than one row, use the rowspan attribute:
+				</p>
+<pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name:&lt;/th&gt;
+    &lt;td&gt;Bill Gates&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th rowspan="2">Telephone:&lt;/th&gt;
+    &lt;td>55577854&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td>55577855&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+				<p>
+					which looks like this:
+				</p>
+				<div class="text-center">
+				<img src="../../images/rowspan.png" alt="rowspan">
+				</div>
+				
 				<h3>
 					An unordered list starts with the <code>&lt;ul&gt;</code> tag. Each list item starts with the <code>&lt;li&gt;</code> tag. Ordered lists on the other hand start with <code>&lt;ol&gt;</code>. For an example, this:
 				</h3>
@@ -194,17 +238,16 @@
 		&lt;li&gt;Tea&lt;/li&gt;
 		&lt;li&gt;Milk&lt;/li&gt;
 	&lt;/ol&gt;
-		</pre>
+</pre>
 				<p data-height="1325" data-theme-id="dark" data-slug-hash="NMzpoE" data-default-tab="html,result" data-user="SithumD" data-embed-version="2" data-pen-title="listsandtables" class="codepen">See the Pen <a href="https://codepen.io/SithumD/pen/NMzpoE/">listsandtables</a> by Sithum Dissanayake (<a href="https://codepen.io/SithumD">@SithumD</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 				<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-			</div>
+				</div>
 			<div class="container-fluid text-justify">
 			</div>
 			<!--Footer/Glossary-->
 			<div class="container-fluid text-center bg-grey textwhite">
 				<div class="row">
 					<h6>
-						<br/>
 						<strong>Contact Us:</strong>
 					</h6>
 					<h6>
@@ -226,7 +269,7 @@
 							<h5>CSS Main Page</h5>
 						</a>
 						<a href="../../All-together.html">
-							<h5>Making Your Own Website With Everything You Have Learned</h5>
+							<h5>Final Activity</h5>
 						</a>
 					</div>
 					<div class="col-sm-4 text-center">
@@ -237,11 +280,11 @@
 						<a href="../../A.HTML/lessons/D-Common-HTML-tags.html">
 							<h5>Common HTML Tags</h5>
 						</a>
-						<a href="../../A.HTML/lessons/E-Images.html">
-							<h5>Images</h5>
+						<a href="../../A.HTML/lessons/E-Images-and-Videos.html">
+							<h5>Images and Videos</h5>
 						</a>
 						<a href="../../A.HTML/lessons/F-Lists-and-Table.html">
-							<h5>Tables</h5>
+							<h5>Lists and Tables</h5>
 						</a>
 						<a href="../../A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
 							<h5>XHTML 1.0 Strict Validation</h5>
