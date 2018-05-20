@@ -22,3 +22,15 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+function showAnswers() {
+	if (document.getElementById('show-answers').innerHTML === "Show Answers") {
+		document.getElementById('answers').style.display = "initial";
+		document.getElementById('show-answers').innerHTML = "Hide Answers";
+	} else {
+		document.getElementById('answers').style.display = "none";
+		document.getElementById('show-answers').innerHTML = "Show Answers";
+	}
+}
+

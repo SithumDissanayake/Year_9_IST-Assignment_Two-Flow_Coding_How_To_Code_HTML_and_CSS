@@ -55,41 +55,42 @@
 	margin-bottom: 0px !important;
 	height: 100vh;
 	width: 100vw;
-	z-index: -1 !important;
+	z-index: 0 !important;
 	position: fixed;
 }
 
 .jumbotron-content{
 	position: absolute !important;
 	top: 45% !important;
-	left: 50% !important;
+	left: 50vw !important;
 	transform: translate(-50%, -50%) !important;
 	width: 100% !important;
 }
+
 .down-arrow {
 	width:50px;
 	position: absolute;
 	display: block;
 	top: 50vh;
-	left:48%;
+	left: 48%;
 	transform: translate(-50%, -50%);
-	z-index: -1 !important;
+	z-index: 1 !important;
+}
+.container-fluid {
+	padding: 60px 50px;
+	line-height: 1.8 !important;
 }
 
 .pagecontent{
-	z-index: 0 !important;
+	z-index: 1 !important;
 	position: absolute;
+	line-height: 1.8 !important;
 	top: 100vh;
 } 
 .padding-container{
 	padding: 1% 0% 1% 0 !important;
 
 }
-
-body{
-	line-height: 1.8 !important;
-}
-
 .bg-grey {
 	background-color: #485460 !important;
 }
@@ -99,6 +100,8 @@ body{
 
 .container-fluid {
 	padding: 60px 50px !important;
+	line-height: 1.8 !important;
+	width: 100vw ;
 }
 
 .www-panel {
@@ -166,11 +169,13 @@ body{
 .html-panel-body {
 	padding: 20px;
 	text-align: Justify;
+	margin: 0px 0px 30px 0px;
 }
 
 .css-panel-body {
 	padding: 20px;
 	text-align: Justify;
+	margin: 0px 0px 48px 0px;
 }
 
 .html-panel-footer{
@@ -199,24 +204,23 @@ body{
 	background-color: #fff !important;
 	color: #222f3e;
 } 
-
 a:link {
-	color:white !important;
-	text-decoration: none !important;
+	color:white;
+	text-decoration: none ;
 }
 
 a:visited {
-	color:white !important;
-	text-decoration: none !important;
+	color:white ;
+	text-decoration: none ;
 }
 
 a:hover {
-	color:#40739e !important;
+	color:#66A5AD !important;
 	text-decoration: none !important;
 }
 
 a:active {
-	color:#40739e !important;
+	color:#66A5AD !important;
 	text-decoration: none !important;
 }
 
@@ -224,10 +228,10 @@ pre{
 	display: inline-block;
 	padding: 10px;
 	margin: 10px 0 20px 0;
-	font-family: 'Anonymous Pro', monospace;
+	font-family: 'Anonymous Pro', monospace !important;
 	font-size: 0.8em;
-    white-space: pre;
-    word-wrap: normal;
+	white-space: pre;
+	word-wrap: normal;
 }
 
 .padding{

@@ -1,29 +1,31 @@
 <!--
-   // This project is submitted as part of the assessment for Year 9 IST.
-   // This is all our own work. We have referenced any work used from other
-   // sources and have not plagiarised the work of others.
-   // (signed) Daniel Pan, Sithum Dissanayake
-   -->
+// This project is submitted as part of the assessment for Year 9 IST.
+// This is all our own work. We have referenced any work used from other
+// sources and have not plagiarised the work of others.
+// (signed) Daniel Pan, Sithum Dissanayake
+-->
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>FlowCoding-HowToCodeHTML-MultiPageWebsites</title>
-      <meta charset="UTF-8">
-      <!--CSS-->
-      <link rel="stylesheet" href="../../styles/sub-html-style.css"/>
-      <!--Javascript-->
-      <script src="../../scripts/script.js"></script>
-      <!--Favicon (Converter Used: http://www.favicomatic.com)-->
-      <link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
-      <link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
+	<head>
+		<title>FlowCoding-HowToCodeHTML-MultiPageWebsites</title>
+		<meta charset="UTF-8">
+		<!--CSS-->
+		<link rel="stylesheet" href="../../styles/sub-html-style.css"/>
+		<!--Favicon (Converter Used: http://www.favicomatic.com)-->
+		<link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
 		<!--Font Used Is Anonymous Pro and Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito + https://fonts.google.com/specimen/Anonymous+Pro-->	
 		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Nunito" rel="stylesheet">		
-      <!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   </head>
-   <body>
+		<!--This is jQuery from Google CDN and can be found at: https://developers.google.com/speed/libraries/-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--Javascript (The Javascript file has to be after the jQuery file for it to work)-->
+		<script src="scripts/script.js"></script>
+		<!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
 		<!--Navbar-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -31,21 +33,22 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="../../index.html">Flow Coding</a>
 				</div>
 				<div class="collapse navbar-collapse" id="mainNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="../../index.html#mainintroductions">Introductions</a></li>
-						<li class="active"><a href="../../A.HTML/index.html">Learn How to Code: HTML</a></li>
-						<li><a href="../../B.CSS/index.html">Learn How to Code: CSS</a></li>
+						<li><a href="../../index.html">Introductions</a></li>
+						<li class="active"><a href="../../A.HTML/index.html">Learn: HTML</a></li>
+						<li><a href="../../B.CSS/index.html">Learn: CSS</a></li>
+						<li><a href="../../All-together.html">Create</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!--Second Navbar-->
-				<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
+		<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#secondnavbar">
@@ -67,95 +70,162 @@
 				</div>
 			</div>
 		</nav>
-	   		<!--Main Sign-->
-		<div class="shadowblack textwhite jumbotron text-center animated fadeInUp">
+		<!--Main Sign-->
+		<div class="shadowblack textwhite jumbotron text-center">
 			<div class="jumbotron-content">
-			<h1>Multi Page Websites</h1>
+				<h1>Multi Page Websites</h1>
 			</div>
 		</div>
-	   <div class="pagecontent bg-white">
-	<!--MainContent-->
-		   <div class= "container-fluid bg-grey textwhite text-justify">
-			 <h2 class= "text-center">
-				 Linking your pages.
-			   </h2>
-			   <p>
-				   Linking your pages to other pages can be done with the &lt;a&gt; tag you can also add attributes such as href to where you exactly want the link to go to e.g. a url. E.g. <code>&lt;a href="url goes here"&gt; This is what the link text is.&lt;/a&gt;</code>
-			   </p>
-		   </div>
-		   	<div class= "container-fluid text-justify">
-		   </div>
+		<div class="pagecontent bg-white">
+			<!--MainContent-->
+			<div class="container-fluid bg-grey textwhite text-justify">
+				<p>
+					Linking your pages to other pages can be done with the &lt;a&gt; tag you can also add attributes such as href to where you exactly want the link to go to e.g. a url. E.g. <code>&lt;a href="url goes here"&gt; This is what the link text is. &lt;/a&gt;</code> With this you will have the power to be able to link up your pages and make your page have many sites. By default, link will be like this: <a href="javascript:void(0)" class="defaultlink">Default Link</a>. However this can be easily changed with CSS. Many complexity. Not. Just like this:
+				</p>
+			</div>
+			<div class= "container-fluid text-justify">
+				<table class="table table-bordered table-hover">
+					<caption class="text-center">All The Tags Used in This Lesson and Their Definitions</caption>
+					<thead class="text-justify">
+						<tr>
+							<th>Tags</th>
+							<th>Definition</th>
+						</tr>
+					</thead>
+					<tbody class="text-justify">
+						<tr>
+							<td><code>&lt;a&gt;</code>...<code>&lt;/a&gt;</code></td>
+							<td>The <code>a</code> tag defines a hyperlink, which is used to link from one page to another.</td>
+						</tr>
+						<tr class="warning">
+							<td><code>href="link goes here"</code></td>
+							<td>The <code>href</code> attribute specifies the location (URL) of the external resource (most often a style sheet file).</td>
+						</tr>
+						<tr class="warning">
+							<td><code>target</code></td>
+							<td>The <code>target</code> target attribute specifies where to open the linked document.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					The most basic way of linking pages is to use this format:
+				</p>
+				<pre>&lt;a href="url"&gt;link text&lt;/a&gt;</pre>
+				<p>
+					This means that "link text" will be linkd with the url.
+				</p>
+<p>
+	<br/>
+A local link (link to the same web site) is specified with a relative URL (without http://www....) is done like this.
+				</p>
+				<pre>&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;</pre>
+				<p>
+					Now this page has pages within its own website. Wow.
+				</p>
+				<br/>
+				<p>
+					The target attribute specifies where to open the linked document, which can have one of the following values:
+				</p>
+				<ul>
+					<li>_blank - Opens the linked document in a new window or tab</li>
+					<li>_self - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+					<li>_parent - Opens the linked document in the parent frame</li>
+					<li>_top - Opens the linked document in the full body of the window</li>
+					<li>framename - Opens the linked document in a named frame</li>
+				</ul>
+				<p>
+					for an example, this:
+				</p>
+				<pre>&lt;a href="url" target="_blank"&gt;click me!&lt;/a&gt;</pre>
+				<p>
+					will open the in a new tab when "click me!" is clicked. Crikey.
+				</p>
+			</div>
 			<!--Footer/Glossary-->
 			<div class="container-fluid text-center bg-grey textwhite">
 				<div class="row">
-					<h6>
-						<strong>Contact Us:</strong>
-					</h6>
-					<h6>
-						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">Sithum.Dissanayake@cgs.act.edu.au</a>
-					</h6>
-					<h6>
-						<a href="mailto:daniel.pan@cgs.act.edu.au">Daniel.Pan@cgs.act.edu.au</a>
-					</h6>
-					<br/>
-					<div class="col-sm-4 text-center">
-						<h4><strong>Main Links</strong></h4>
+					<div class="col-sm-12 text-center">
+						<a href="#top">
+							<img src="../../images/uparrow.png" alt="uparrow" width="25"/>
+						</a>
+						<br/>
+						<br/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 text-center">
+						<h4>
+							<strong>Contact Us</strong>
+						</h4>
+						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">
+							<h5><img src="../../images/mailicon.png" width="25"/> Sithum Dissanayake</h5>
+						</a>
+						<a href="mailto:daniel.pan@cgs.act.edu.au">
+							<h5><img src="../../images/mailicon.png" width="25"/> Daniel Pan</h5>
+						</a>
+						<a href="https://twitter.com/Coding_Flow">
+							<h5><img src="../../images/twitterbirdicon.png" width="25"/> @Coding_Flow</h5>
+						</a>
+					</div>
+					<div class="col-sm-3 text-center">
+						<h5><strong>Main Pages</strong></h5>
 						<a href="../../index.html">
-							<h5>Home Page</h5>
+							<h6>Home Page</h6>
 						</a>
 						<a href="../../A.HTML/index.html">
-							<h5>HTML Main Page</h5>
+							<h6>HTML Main Page</h6>
 						</a>
 						<a href="../../B.CSS/index.html">
-							<h5>CSS Main Page</h5>
+							<h6>CSS Main Page</h6>
 						</a>
 						<a href="../../All-together.html">
-							<h5>Final Activity</h5>
+							<h6>Final Activity</h6>
 						</a>
 					</div>
-					<div class="col-sm-4 text-center">
-						<h4><strong>HTML Lessons</strong></h4>
+					<div class="col-sm-3 text-center">
+						<h5><strong>HTML Lessons</strong></h5>
 						<a href="../../A.HTML/lessons/C-Creating-your-first-web-page.html">
-							<h5>Creating Your First Web Page</h5>
+							<h6>Creating Your First Web Page</h6>
 						</a>
 						<a href="../../A.HTML/lessons/D-Common-HTML-tags.html">
-							<h5>Common HTML Tags</h5>
+							<h6>Common HTML Tags</h6>
 						</a>
-						<a href="../../A.HTML/lessons/E-Images-and-Videos.html">
-							<h5>Images and Videos</h5>
+						<a href="../../A.HTML/lessons/E-Images-and-Videos">
+							<h6>Images and Videos</h6>
 						</a>
 						<a href="../../A.HTML/lessons/F-Lists-and-Tables.html">
-							<h5>Lists and Tables</h5>
+							<h6>Lists and Tables</h6>
 						</a>
 						<a href="../../A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
-							<h5>XHTML 1.0 Strict Validation</h5>
+							<h6>XHTML 1.0 Strict Validation</h6>
 						</a>
 						<a href="../../A.HTML/lessons/H-Multi-page-websites.html">
-							<h5>Multi-page Websites</h5>
+							<h6>Multi-page Websites</h6>
 						</a>
 						<a href="../../A.HTML/lessons/I-File-organisation.html">
-							<h5>File Organisation</h5>
+							<h6>File Organisation</h6>
 						</a>
 					</div>
-					<div class="col-sm-4 text-center">
-						<h4><strong>CSS Lessons</strong></h4>
+					<div class="col-sm-3 text-center">
+						<h5><strong>CSS Lessons</strong></h5>
 						<a href="../../B.CSS/lessons/J-Creating-your-first-CSS-styles.html">
-							<h5>Creating Your First CSS Styles</h5>
+							<h6>Creating Your First CSS Styles</h6>
 						</a>
 						<a href="../../B.CSS/lessons/K-Common-CSS-styles.html">
-							<h5>Common CSS Styles</h5>
+							<h6>Common CSS Styles</h6>
 						</a>
 						<a href="../../B.CSS/lessons/L-Classes-and-ids.html">
-							<h5>Classes and Ids</h5>
+							<h6>Classes and Ids</h6>
 						</a>
 						<a href="../../B.CSS/lessons/M-Divs-and-spans.html">
-							<h5>Divs and Spans</h5>
+							<h6>Divs and Spans</h6>
 						</a>
 					</div>
 				</div>
 				<br/>
-				<h4 class="footer-company-name textwhite">Flow Coding &copy; 2018</h4>
+				<hr/>
+				<h4 class="footer-company-name textwhite"> Copyright &copy; 2018 Flow Coding. All rights reserved.</h4>
 			</div>
-		   	   </div>
-   </body>
+		</div>
+	</body>
 </html>

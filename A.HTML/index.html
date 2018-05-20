@@ -26,7 +26,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
-	<body>
+	<body id="top">
 		<!--Navbar-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -34,21 +34,22 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="../index.html">Flow Coding</a>
+					<a class="navbar-brand" href="..index.html">Flow Coding</a>
 				</div>
 				<div class="collapse navbar-collapse" id="mainNavbar">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="../index.html">Introductions</a></li>
-						<li class="active"><a href="../A.HTML/index.html">Learn How to Code: HTML</a></li>
-						<li><a href="../B.CSS/index.html">Learn How to Code: CSS</a></li>
+						<li class="active"><a href="../A.HTML/index.html">Learn: HTML</a></li>
+						<li><a href="../B.CSS/index.html">Learn: CSS</a></li>
+						<li><a href="../All-together.html">Create</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!--Second Navbar-->
-				<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
+		<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#secondnavbar">
@@ -77,7 +78,7 @@
 				<h3>Welcome, Youngster.</h3>
 				<h3>So! You want to learn HTML.</h3>
 				<a href="#introductions">
-				<img class="down-arrow animated infinite pulse" src="../images/down-arrow.png" alt="downarrow"/>
+					<img class="down-arrow animated infinite slideInDown" src="../images/down-arrow.png" alt="downarrow"/>
 				</a>
 			</div>
 		</div>
@@ -91,8 +92,8 @@
 					<p>
 						HyperText Markup Language (HTML) is the standard markup language for creating Web pages. HTML describes the structure of Web pages using various different tags, which are used to perform different commands. For an example the <code>&lt;p&gt;</code> element represents the use of a paragraph. These tags or elements are the building blocks of HTML. Web browsers e.g. Chrome or Safari do not display the HTML tags, but use them to render the content of the page. HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page.
 					</p>
-										<br/>
-										<br/>
+					<br/>
+					<br/>
 
 				</div>
 			</div>
@@ -113,7 +114,8 @@
 						<div class="padding bg-grey textwhite">
 							<h3>Common HTML Tags!</h3>
 							<p>This will teach you how to use elements and basic markup structure.</p>
-							<a href="lessons/D-Common-HTML-tags.html" class="btn btn-lg" role="button">Start Learning About Common HTML Tags!</a>
+
+							<a href="lessons/D-Common-HTML-tags.html" class="btn btn-lg" role="button">Learn About Common HTML Tags!</a>
 
 						</div>
 					</div>
@@ -121,7 +123,7 @@
 						<div class="padding bg-grey textwhite">
 							<h3>Put Images and Videos In Your Web Page!</h3>
 							<p>This will show you how to add images and videos to give that extra edge. Boom.</p>
-							<a href="lessons/E-Images-and-Videos.html" class="btn btn-lg" role="button">Start Learning About Embedding Images and Videos!</a>
+							<a href="lessons/E-Images-and-Videos.html" class="btn btn-lg" role="button">Learn About Embedding Images and Videos!</a>
 
 
 						</div>
@@ -130,7 +132,7 @@
 						<div class="padding bg-grey textwhite">
 							<h3>Putting Lists and Tables In Your Web Page!</h3>
 							<p>Learn how to add a table. Many uses. Much convinience.</p>
-							<a href="lessons/F-Lists-and-Tables.html" class="btn btn-lg" role="button">Start Learning About Putting Tables in Your Web Page!</a>
+							<a href="lessons/F-Lists-and-Tables.html" class="btn btn-lg" role="button">Learn About Lists and Tables!</a>
 
 
 						</div>
@@ -139,7 +141,7 @@
 						<div class="padding bg-grey textwhite">
 							<h3>Making Your Web Page XHTML 1.0 Strict</h3>
 							<p>This can be very annoying.</p>
-							<a href="lessons/G-XHTML-1_0-Strict-Validation.html" class="btn btn-lg" role="button">Start Learning About Making Your Web Page XHTML Valid!</a>
+							<a href="lessons/G-XHTML-1_0-Strict-Validation.html" class="btn btn-lg" role="button">Learn About XHTML Validation!</a>
 
 						</div>
 					</div>
@@ -147,89 +149,103 @@
 						<div class="padding bg-grey textwhite">
 							<h3>Multi-page Websites</h3>
 							<p>Start linking up your pages with the use of the <code>a</code> tag.</p>
-							<a href="lessons/H-Multi-page-websites.html" class="btn btn-lg" role="button">Start Learning Having a Multi-Page Website!</a>
+							<a href="lessons/H-Multi-page-websites.html" class="btn btn-lg" role="button">Learn About a Multi-Page Website!</a>
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<div class="padding bg-grey textwhite">
 							<h3>File Oraganisation of Your Website</h3>
 							<p>Make sure you have a page with no mishap links. Such Features.</p>
-							<a href="lessons/I-File-organisation.html" class="btn btn-lg" role="button">Start Learning Organizing Files On Your Web Page!</a>
+							<a href="lessons/I-File-organisation.html" class="btn btn-lg" role="button">Learn About File Organization!</a>
 
 						</div>
 					</div>
 				</div>
 			</div>
-			<!--Footer/Glossary-->
+						<!--Footer/Glossary-->
 			<div class="container-fluid text-center bg-grey textwhite">
 				<div class="row">
-					<h6>
-						<strong>Contact Us:</strong>
-					</h6>
-					<h6>
-						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">Sithum.Dissanayake@cgs.act.edu.au</a>
-					</h6>
-					<h6>
-						<a href="mailto:daniel.pan@cgs.act.edu.au">Daniel.Pan@cgs.act.edu.au</a>
-					</h6>
-					<br/>
-					<div class="col-sm-4 text-center">
-						<h4><strong>Main Links</strong></h4>
+					<div class="col-sm-12 text-center">
+						<a href="#top">
+							<img src="../images/uparrow.png" alt="uparrow" width="25"/>
+						</a>
+						<br/>
+						<br/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 text-center">
+						<h4>
+							<strong>Contact Us</strong>
+						</h4>
+						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">
+							<h5><img src="../images/mailicon.png" width="25"/> Sithum Dissanayake</h5>
+						</a>
+						<a href="mailto:daniel.pan@cgs.act.edu.au">
+							<h5><img src="../images/mailicon.png" width="25"/> Daniel Pan</h5>
+						</a>
+						<a href="https://twitter.com/Coding_Flow">
+							<h5><img src="../images/twitterbirdicon.png" width="25"/> @Coding_Flow</h5>
+						</a>
+					</div>
+					<div class="col-sm-3 text-center">
+						<h5><strong>Main Pages</strong></h5>
 						<a href="../index.html">
-							<h5>Home Page</h5>
+							<h6>Home Page</h6>
 						</a>
 						<a href="../A.HTML/index.html">
-							<h5>HTML Main Page</h5>
+							<h6>HTML Main Page</h6>
 						</a>
 						<a href="../B.CSS/index.html">
-							<h5>CSS Main Page</h5>
+							<h6>CSS Main Page</h6>
 						</a>
 						<a href="../All-together.html">
-							<h5>Final Activity</h5>
+							<h6>Final Activity</h6>
 						</a>
 					</div>
-					<div class="col-sm-4 text-center">
-						<h4><strong>HTML Lessons</strong></h4>
+					<div class="col-sm-3 text-center">
+						<h5><strong>HTML Lessons</strong></h5>
 						<a href="../A.HTML/lessons/C-Creating-your-first-web-page.html">
-							<h5>Creating Your First Web Page</h5>
+							<h6>Creating Your First Web Page</h6>
 						</a>
 						<a href="../A.HTML/lessons/D-Common-HTML-tags.html">
-							<h5>Common HTML Tags</h5>
+							<h6>Common HTML Tags</h6>
 						</a>
-						<a href="../A.HTML/lessons/E-Images-and-Videos.html">
-							<h5>Images and Videos</h5>
+						<a href="../A.HTML/lessons/E-Images-and-Videos">
+							<h6>Images and Videos</h6>
 						</a>
 						<a href="../A.HTML/lessons/F-Lists-and-Tables.html">
-							<h5>Lists and Tables</h5>
+							<h6>Lists and Tables</h6>
 						</a>
 						<a href="../A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
-							<h5>XHTML 1.0 Strict Validation</h5>
+							<h6>XHTML 1.0 Strict Validation</h6>
 						</a>
 						<a href="../A.HTML/lessons/H-Multi-page-websites.html">
-							<h5>Multi-page Websites</h5>
+							<h6>Multi-page Websites</h6>
 						</a>
 						<a href="../A.HTML/lessons/I-File-organisation.html">
-							<h5>File Organisation</h5>
+							<h6>File Organisation</h6>
 						</a>
 					</div>
-					<div class="col-sm-4 text-center">
-						<h4><strong>CSS Lessons</strong></h4>
+					<div class="col-sm-3 text-center">
+						<h5><strong>CSS Lessons</strong></h5>
 						<a href="../B.CSS/lessons/J-Creating-your-first-CSS-styles.html">
-							<h5>Creating Your First CSS Styles</h5>
+							<h6>Creating Your First CSS Styles</h6>
 						</a>
 						<a href="../B.CSS/lessons/K-Common-CSS-styles.html">
-							<h5>Common CSS Styles</h5>
+							<h6>Common CSS Styles</h6>
 						</a>
 						<a href="../B.CSS/lessons/L-Classes-and-ids.html">
-							<h5>Classes and Ids</h5>
+							<h6>Classes and Ids</h6>
 						</a>
 						<a href="../B.CSS/lessons/M-Divs-and-spans.html">
-							<h5>Divs and Spans</h5>
+							<h6>Divs and Spans</h6>
 						</a>
 					</div>
 				</div>
 				<br/>
-				<h4 class="footer-company-name textwhite">Flow Coding &copy; 2018</h4>
+				<hr/>
+				<h4 class="footer-company-name textwhite"> Copyright &copy; 2018 Flow Coding. All rights reserved.</h4>
 			</div>
 		</div>
 	</body>

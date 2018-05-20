@@ -1,4 +1,4 @@
-<!--
+x<!--
 // This project is submitted as part of the assessment for Year 9 IST.
 // This is all our own work. We have referenced any work used from other
 // sources and have not plagiarised the work of others.
@@ -13,8 +13,8 @@
 		<!--CSS-->
 		<link rel="stylesheet" href="styles/style.css"/>
 		<!--Favicon (Code From Us, Picture Converter Used: http://www.favicomatic.com)-->
-		<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
 		<!--Font Used Is Anonymous Pro and Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito + https://fonts.google.com/specimen/Anonymous+Pro-->	
 		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Nunito" rel="stylesheet">		
 		<!--This is Animate.css framework and can be found at: https://daneden.github.io/animate.css/-->
@@ -28,96 +28,186 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
-	<body>
-		<div class="shadowblack textwhite jumbotron text-center">
+	<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+		<!--Navbar-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Flow Coding</a>
+				</div>
+				<div class="collapse navbar-collapse" id="mainNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Introductions</a></li>
+						<li><a href="A.HTML/index.html">Learn: HTML</a></li>
+						<li><a href="B.CSS/index.html">Learn: CSS</a></li>
+						<li><a href="All-together.html">Create</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--Main Sign-->
+		<div class="shadowblack textwhite jumbotron text-center animated fadeInUpBig" style="background:#cccccc url('images/backgroundfinal.jpg') no-repeat fixed center;">
 			<div class="jumbotron-content">
-				<h1>Learning How To Code: CSS</h1>
-				<h3>The Final Leap.</h3>
-				<h3>So! Now for CSS.</h3>
+				<h1>Final Activity</h1>
+				<p>It's Time To Ascend</p>
 				<a href="#introductions">
-					<img class="down-arrow animated infinite pulse" src="../images/down-arrow.png" alt="downarrow"/>
-				</a>				
+					<img class="down-arrow animated infinite slideInDown" src="images/down-arrow.png" alt="downarrow"/>
+				</a>			
+				<p>
+				</p>
 			</div>
 		</div>
-			<div class="pagecontent bg-white"  id="introductions">
-			<!--MainContent-->
-			<div class="container-fluid bg-grey textwhite text-justify">
+		<div class="pagecontent bg-white" id="introductions">
+			<!--Final Activity-->
+			<div class="container-fluid bg-grey textwhite text-center">
+				<p>
+					Its time for your final challenge. This will require complete focus, hours of research and infinte perseverance only true Coders using the Flow should attempt this task. We need you to recreate this page. This is the final ascent. Flow to the test. (CRINGE INTENSIFIES)
+				</p>
+			</div>
+			<div class="container-fluid text-justify">
+				<p><em>Tip, click the image to see a larger version.</em></p>
+				<a href="images/challenge.png" class="text-center">
+					<img src="images/challenge.png" alt="Final test" width="620px">
+				</a>
+			</div>
+
+			<div class="container-fluid bg-grey textwhite">
+<pre>
+Well Done for Making It To This Page!
+I really enjoy making XHTML webpages. Like this page is 100% XHTML strict for sure. Truwly amazing. The background is lightblue. This paragraph is justified. With CSS I can make a margin of 30 pixels to the right and the left. Like this image here:
+(Image:"http://www.wirelesshack.org/wp-content/uploads/2018/01/How-To-Install-Doge-Kodi-Addon.jpg")
+has the "alt" attribute of "doge", with the height and width of 42 pixels each. The font is "Arial" by the way. It just looks nice. This paragraph is centered. Much wow.
+This is the biggest header.
+This is the third biggest header
+This is the fifth biggest header
+WOWIE
+free V-bucks from Fortnite
+clickbait that isnt even clickable
+Is clickable a word?
+This convo is heavily introverted
+break into Epic Games
+force them to give me all the v-bucks
+get caught by the cops
+get caught by the cops...
+Despicable Me, Gru Meme:
+(Images:"https://preview.ibb.co/nCFh6T/gru.jpg" width- 512)
+free V-bucks from Fortnite
+(Link:"https://en.wikipedia.org/wiki/Trademark_symbol")came from here
+that's pretty good
+I really really really
+Like from the bottom of my heart
+DOGE
+Please
+Don't
+Hate
+(Video:"https://www.youtube.com/embed/w3jLJU7DT5E?rel=0")
+the width is 560 pixels while the height is 315 pixels
+(Link:"http://validator.w3.org/check?uri=referer"(Image:"http://www.w3.org/Icons/valid-xhtml10" alt- "Valid XHTML 1.0 Strict" height-"31" width-"88" ))
+</pre>
+			</div>
+			<div class="container-fluid text-center">
+				<h2>ANSWER FOR CHALLENGE</h2>
+				<a id="show-answers" onclick="showAnswers()" class="btn btn-lg">Show Answers</a>
+				<div id="answers" style="display: none;">
+					<br/>
+					<br/>
+
+					<p data-height="1718" data-theme-id="dark" data-slug-hash="LmqGzQ" data-default-tab="html,result" data-user="SithumD" data-embed-version="2" data-pen-title="Assignment2- Final Challenge" class="codepen">See the Pen <a href="https://codepen.io/SithumD/pen/LmqGzQ/">Assignment2- Final Challenge</a> by Sithum Dissanayake (<a href="https://codepen.io/SithumD">@SithumD</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+					<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 				</div>
+			</div>
+
 			<!--Footer/Glossary-->
 			<div class="container-fluid text-center bg-grey textwhite">
 				<div class="row">
-					<br/>
-					<div class="col-sm-2 text-center">
-						<h4><strong>Main Pages</strong></h4>
+					<div class="col-sm-12 text-center">
+						<a href="#top">
+							<img src="images/uparrow.png" alt="uparrow" width="25"/>
+						</a>
+						<br/>
+						<br/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 text-center">
+						<h4>
+							<strong>Contact Us</strong>
+						</h4>
+						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">
+							<h5><img src="images/mailicon.png" width="25"/> Sithum Dissanayake</h5>
+						</a>
+						<a href="mailto:daniel.pan@cgs.act.edu.au">
+							<h5><img src="images/mailicon.png" width="25"/> Daniel Pan</h5>
+						</a>
+						<a href="https://twitter.com/Coding_Flow">
+							<h5><img src="images/twitterbirdicon.png" width="25"/> @Coding_Flow</h5>
+						</a>
+					</div>
+					<div class="col-sm-3 text-center">
+						<h5><strong>Main Pages</strong></h5>
 						<a href="#">
-							<h5>Home Page</h5>
+							<h6>Home Page</h6>
 						</a>
 						<a href="A.HTML/index.html">
-							<h5>HTML Main Page</h5>
+							<h6>HTML Main Page</h6>
 						</a>
 						<a href="B.CSS/index.html">
-							<h5>CSS Main Page</h5>
+							<h6>CSS Main Page</h6>
 						</a>
 						<a href="All-together.html">
-							<h5>Final Activity</h5>
+							<h6>Final Activity</h6>
 						</a>
 					</div>
-					<div class="col-sm-2 text-center">
-						<h4><strong>HTML Lessons</strong></h4>
+					<div class="col-sm-3 text-center">
+						<h5><strong>HTML Lessons</strong></h5>
 						<a href="A.HTML/lessons/C-Creating-your-first-web-page.html">
-							<h5>Creating Your First Web Page</h5>
+							<h6>Creating Your First Web Page</h6>
 						</a>
 						<a href="A.HTML/lessons/D-Common-HTML-tags.html">
-							<h5>Common HTML Tags</h5>
+							<h6>Common HTML Tags</h6>
 						</a>
 						<a href="A.HTML/lessons/E-Images-and-Videos">
-							<h5>Images and Videos</h5>
+							<h6>Images and Videos</h6>
 						</a>
 						<a href="A.HTML/lessons/F-Lists-and-Tables.html">
-							<h5>Lists and Tables</h5>
+							<h6>Lists and Tables</h6>
 						</a>
 						<a href="A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
-							<h5>XHTML 1.0 Strict Validation</h5>
+							<h6>XHTML 1.0 Strict Validation</h6>
 						</a>
 						<a href="A.HTML/lessons/H-Multi-page-websites.html">
-							<h5>Multi-page Websites</h5>
+							<h6>Multi-page Websites</h6>
 						</a>
 						<a href="A.HTML/lessons/I-File-organisation.html">
-							<h5>File Organisation</h5>
+							<h6>File Organisation</h6>
 						</a>
 					</div>
-					<div class="col-sm-2 text-center">
-						<h4><strong>CSS Lessons</strong></h4>
+					<div class="col-sm-3 text-center">
+						<h5><strong>CSS Lessons</strong></h5>
 						<a href="B.CSS/lessons/J-Creating-your-first-CSS-styles.html">
-							<h5>Creating Your First CSS Styles</h5>
+							<h6>Creating Your First CSS Styles</h6>
 						</a>
 						<a href="B.CSS/lessons/K-Common-CSS-styles.html">
-							<h5>Common CSS Styles</h5>
+							<h6>Common CSS Styles</h6>
 						</a>
 						<a href="B.CSS/lessons/L-Classes-and-ids.html">
-							<h5>Classes and Ids</h5>
+							<h6>Classes and Ids</h6>
 						</a>
 						<a href="B.CSS/lessons/M-Divs-and-spans.html">
-							<h5>Divs and Spans</h5>
+							<h6>Divs and Spans</h6>
 						</a>
-					</div>
-					<div class="col-sm-6 text-center">
-					<h6>
-						<br/>
-						<strong>Contact Us:</strong>
-					</h6>
-					<h6>
-						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">Sithum.Dissanayake@cgs.act.edu.au</a>
-					</h6>
-					<h6>
-						<a href="mailto:daniel.pan@cgs.act.edu.au">Daniel.Pan@cgs.act.edu.au</a>
-					</h6>
 					</div>
 				</div>
 				<br/>
-				<h4 class="footer-company-name textwhite">Flow Coding &copy; 2018</h4>
+				<hr/>
+				<h4 class="footer-company-name textwhite"> Copyright &copy; 2018 Flow Coding. All rights reserved.</h4>
 			</div>
 		</div>
 	</body>
-	
 </html>

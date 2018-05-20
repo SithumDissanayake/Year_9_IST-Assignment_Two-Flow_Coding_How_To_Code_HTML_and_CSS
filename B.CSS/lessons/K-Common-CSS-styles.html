@@ -11,20 +11,21 @@
 		<meta charset="UTF-8">
 		<!--CSS-->
 		<link rel="stylesheet" href="../../styles/sub-css-style.css"/>
-		<!--Javascript-->
-		<script src="../../scripts/script.js"></script>
 		<!--Favicon (Converter Used: http://www.favicomatic.com)-->
 		<link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
 		<!--Font Used Is Anonymous Pro and Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito + https://fonts.google.com/specimen/Anonymous+Pro-->	
 		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Nunito" rel="stylesheet">		
+		<!--This is jQuery from Google CDN and can be found at: https://developers.google.com/speed/libraries/-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--Javascript (The Javascript file has to be after the jQuery file for it to work)-->
+		<script src="scripts/script.js"></script>
 		<!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-
 		<!--Navbar-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -32,15 +33,16 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="../../index.html">Flow Coding</a>
 				</div>
 				<div class="collapse navbar-collapse" id="mainNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="../../index.html#mainintroductions">Introductions</a></li>
-						<li><a href="../../A.HTML/index.html">Learn How to Code: HTML</a></li>
-						<li class="active"><a href="../../B.CSS/index.html">Learn How to Code: CSS</a></li>
+						<li><a href="../../index.html">Introductions</a></li>
+						<li><a href="../../A.HTML/index.html">Learn: HTML</a></li>
+						<li class="active"><a href="../../B.CSS/index.html">Learn: CSS</a></li>
+						<li><a href="../../All-together.html">Create</a></li>
 					</ul>
 				</div>
 			</div>
@@ -67,7 +69,7 @@
 
 		</nav>
 		<!--Main Sign-->
-		<div class="shadowblack textwhite jumbotron text-center animated fadeInUp">
+		<div class="shadowblack textwhite jumbotron text-center">
 			<div class="jumbotron-content">
 				<h1>Common CSS Styles</h1>
 			</div>
@@ -79,17 +81,18 @@
 		CSS styles are often in this format:
 					</p>
 				<pre>
-				h1 {
+h1 {
 	color: maroon;
 	margin-left: 40px;
-}</pre>
+}
+</pre>
 				<p>
 					Now you might be thinking "What does this mean?" As you can see, the <code>h1</code> tag (selector) is meant to be in a maroon colour (note the US english spelling in the code) and have a margin to the left side with a space of 40 pixels. The “color” and “margin-left” is the property, where the “maroon” and “40px” shows the value of the property. Together the two parts is called a declaration. This is the most basic format of css. There are many more kinds of CSS tags that can be used alter the look of the HTML tag.
 				</p>
 							</div>
-<div class="table-responsive container-fluid text-center">
+<div class="container-fluid text-center">
 				<table class="table table-bordered table-hover">
-					<caption class="text-center">All Common CSS Tags</caption>
+					<caption class="text-center">Common CSS Tags</caption>
 					<thead class="text-justify">
 						<tr>
 							<th>Tags</th>
@@ -129,79 +132,164 @@
 						</tr>
 					</tbody>
 				</table>
+				</div>
+
+	<br/>
+	<div class= "container-fluid bg-grey textwhite text-justify">
+	<h2 class="text-center">
+		Colours
+	</h2>
+	<p class="text-justify">
+		CSS colours are found in many forms. They can be found in many forms; predefined color names, RGB, HEX, HSL, RGBA, HSLA values. We are going to be only working on the predefined color types as well as HEX (Hex triplet), which really is the only kinds of colours that you will really need to use. To find the right colour, you can use the <a href="https://www.w3schools.com/colors/colors_picker.asp">W3schools colour picker</a> 
+	</p>
+	<br/>
+	<br/>
+			</div>
+			<div class= "container-fluid text-justify">
+	<h2 class="text-center">
+		Borders
+	</h2>
+	<p class="text-justify">
+		Borders can be valued in many ways. They can have various sizes with px or names but also can be styled with border-style The following values are allowed:
+	</p>
+	<ul class="text-left">
+<li>dotted - Defines a dotted border</li>
+<li>dashed - Defines a dashed border</li>
+<li>solid - Defines a solid border</li>
+<li>double - Defines a double border</li>
+<li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+<li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+<li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+<li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+<li>none - Defines no border</li>
+<li>hidden - Defines a hidden border</li>
+</ul> 
+	<p>
+		The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).
+	</p>
+	<br/>
+	<br/>
+			</div>
+					<div class= "container-fluid bg-grey textwhite text-justify">
+
+	<h2 class="text-center">
+		Font Families
+	</h2>
+	<p class="text-justify">
+		There are many values that can be used for font family. The most common families include san-serif, serif as well as calibri.
+	</p>
+	<pre class="text-left">
+	selector {
+	font-family: family-name|generic-family|initial|inherit;
+	}</pre>
+	<p>
+		Font size values can be changed in two ways;
+	</p>
+	<ol class="text-left">
+		<li>Using a name e.g. large, small</li>
+		<li>Using px (pixels) e.g. 40px</li>
+	</ol>
+	<p class="text-left">
+		like this:
+	</p>
+	<pre class="text-left">
+	selector {
+    font-size: value;
+}</pre>
+												</div>
+							<div class= "container-fluid text-justify">
+	<h2 class="text-center">
+		Background Colour
+	</h2>
+	<p>
+		Background Colour can be added with the <code>background-color: value; declaration.</code>
+	</p>
 			</div>
 			<!--Footer/Glossary-->
 			<div class="container-fluid text-center bg-grey textwhite">
 				<div class="row">
-					<h6>
-						<strong>Contact Us:</strong>
-					</h6>
-					<h6>
-						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">Sithum.Dissanayake@cgs.act.edu.au</a>
-					</h6>
-					<h6>
-						<a href="mailto:daniel.pan@cgs.act.edu.au">Daniel.Pan@cgs.act.edu.au</a>
-					</h6>
-					<br/>
-					<div class="col-sm-4 text-center">
-						<h4><strong>Main Links</strong></h4>
+					<div class="col-sm-12 text-center">
+						<a href="#top">
+							<img src="../../images/uparrow.png" alt="uparrow" width="25"/>
+						</a>
+						<br/>
+						<br/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 text-center">
+						<h4>
+							<strong>Contact Us</strong>
+						</h4>
+						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">
+							<h5><img src="../../images/mailicon.png" width="25"/> Sithum Dissanayake</h5>
+						</a>
+						<a href="mailto:daniel.pan@cgs.act.edu.au">
+							<h5><img src="../../images/mailicon.png" width="25"/> Daniel Pan</h5>
+						</a>
+						<a href="https://twitter.com/Coding_Flow">
+							<h5><img src="../../images/twitterbirdicon.png" width="25"/> @Coding_Flow</h5>
+						</a>
+					</div>
+					<div class="col-sm-3 text-center">
+						<h5><strong>Main Pages</strong></h5>
 						<a href="../../index.html">
-							<h5>Home Page</h5>
+							<h6>Home Page</h6>
 						</a>
 						<a href="../../A.HTML/index.html">
-							<h5>HTML Main Page</h5>
+							<h6>HTML Main Page</h6>
 						</a>
 						<a href="../../B.CSS/index.html">
-							<h5>CSS Main Page</h5>
+							<h6>CSS Main Page</h6>
 						</a>
 						<a href="../../All-together.html">
-							<h5>Final Activity</h5>
+							<h6>Final Activity</h6>
 						</a>
 					</div>
-					<div class="col-sm-4 text-center">
-						<h4><strong>HTML Lessons</strong></h4>
+					<div class="col-sm-3 text-center">
+						<h5><strong>HTML Lessons</strong></h5>
 						<a href="../../A.HTML/lessons/C-Creating-your-first-web-page.html">
-							<h5>Creating Your First Web Page</h5>
+							<h6>Creating Your First Web Page</h6>
 						</a>
 						<a href="../../A.HTML/lessons/D-Common-HTML-tags.html">
-							<h5>Common HTML Tags</h5>
+							<h6>Common HTML Tags</h6>
 						</a>
-						<a href="../../A.HTML/lessons/E-Images-and-Videos.html">
-							<h5>Images and Videos</h5>
+						<a href="../../A.HTML/lessons/E-Images-and-Videos">
+							<h6>Images and Videos</h6>
 						</a>
 						<a href="../../A.HTML/lessons/F-Lists-and-Tables.html">
-							<h5>Lists and Tables</h5>
+							<h6>Lists and Tables</h6>
 						</a>
 						<a href="../../A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
-							<h5>XHTML 1.0 Strict Validation</h5>
+							<h6>XHTML 1.0 Strict Validation</h6>
 						</a>
 						<a href="../../A.HTML/lessons/H-Multi-page-websites.html">
-							<h5>Multi-page Websites</h5>
+							<h6>Multi-page Websites</h6>
 						</a>
 						<a href="../../A.HTML/lessons/I-File-organisation.html">
-							<h5>File Organisation</h5>
+							<h6>File Organisation</h6>
 						</a>
 					</div>
-					<div class="col-sm-4 text-center">
-						<h4><strong>CSS Lessons</strong></h4>
+					<div class="col-sm-3 text-center">
+						<h5><strong>CSS Lessons</strong></h5>
 						<a href="../../B.CSS/lessons/J-Creating-your-first-CSS-styles.html">
-							<h5>Creating Your First CSS Styles</h5>
+							<h6>Creating Your First CSS Styles</h6>
 						</a>
 						<a href="../../B.CSS/lessons/K-Common-CSS-styles.html">
-							<h5>Common CSS Styles</h5>
+							<h6>Common CSS Styles</h6>
 						</a>
 						<a href="../../B.CSS/lessons/L-Classes-and-ids.html">
-							<h5>Classes and Ids</h5>
+							<h6>Classes and Ids</h6>
 						</a>
 						<a href="../../B.CSS/lessons/M-Divs-and-spans.html">
-							<h5>Divs and Spans</h5>
+							<h6>Divs and Spans</h6>
 						</a>
 					</div>
 				</div>
 				<br/>
-				<h4 class="footer-company-name textwhite">Flow Coding &copy; 2018</h4>
+				<hr/>
+				<h4 class="footer-company-name textwhite"> Copyright &copy; 2018 Flow Coding. All rights reserved.</h4>
 			</div>
 		</div>
-
-	</body>
+   </body>
 </html>

@@ -2,9 +2,7 @@
 	font-family: 'Nunito' !important;
 	font-size: 22px;
 }
-body h3{
-	line-height: 1.8 !important;
-}
+
 .textwhite{
 	color:white !important;
 }
@@ -79,11 +77,11 @@ body h3{
 	transform: translate(-50%, -50%) !important;
 	width: 100% !important;
 }
-.container-fluid{
+.container-fluid {
 	padding: 60px 50px !important;
-	width: 100%;
+	width: 100vw ;
+	line-height: 1.8 !important;
 }
-
 .pagecontent{
 	z-index: 0 !important;
 	position: absolute;
@@ -93,9 +91,7 @@ body h3{
 .padding-container{
 	padding: 1% 0% 1% 0 !important;
 }
-table{
-	
-}
+
 .bg-grey {
 	background-color: #485460 !important;
 }
@@ -116,23 +112,43 @@ table{
 } 
 
 a:link {
-	color:white !important;
-	text-decoration: none !important;
+	color:white;
+	text-decoration: none ;
 }
 
 a:visited {
-	color:white !important;
-	text-decoration: none !important;
+	color:white ;
+	text-decoration: none ;
 }
 
 a:hover {
-	color:#40739e !important;
+	color:#66A5AD !important;
 	text-decoration: none !important;
 }
 
 a:active {
-	color:#40739e !important;
+	color:#66A5AD !important;
 	text-decoration: none !important;
+}
+
+a:link.defaultlink {
+	color:#0000EE;
+	text-decoration: underline ;
+}
+
+a:visited.defaultlink {
+	color:#551A8B ;
+	text-decoration: underline ;
+}
+
+a:hover.defaultlink {
+	color:#0000EE ;
+	text-decoration: underline !important;
+}
+
+a:active.defaultlink {
+	color:#EE0000  ;
+	text-decoration: underline !important;
 }
 
 pre{
@@ -141,9 +157,8 @@ pre{
 	margin: 10px 0 20px 0;
 	font-family: 'Anonymous Pro', monospace !important;
 	font-size: 0.8em;
-    white-space: pre;
-    word-wrap: normal;
-
+	white-space: pre;
+	word-wrap: normal;
 }
 
 .padding{
