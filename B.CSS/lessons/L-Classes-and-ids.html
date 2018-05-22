@@ -1,228 +1,233 @@
 <!--
-// This project is submitted as part of the assessment for Year 9 IST.
-// This is all our own work. We have referenced any work used from other
-// sources and have not plagiarised the work of others.
-// (signed) Daniel Pan, Sithum Dissanayake
--->
+   // This project is submitted as part of the assessment for Year 9 IST.
+   // This is all our own work. We have referenced any work used from other
+   // sources and have not plagiarised the work of others.
+   // (signed) Daniel Pan, Sithum Dissanayake
+   -->
+<!--This Validates as HTML5-->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>FlowCoding-HowToCodeCSS-ClassandIds</title>
-		<meta charset="UTF-8">
-		<!--CSS-->
-		<link rel="stylesheet" href="../../styles/sub-css-style.css"/>
-		<!--Favicon (Converter Used: http://www.favicomatic.com)-->
-		<link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
-		<!--Font Used Is Anonymous Pro and Nunito from Google Font and are Found at: https://fonts.google.com/specimen/Nunito + https://fonts.google.com/specimen/Anonymous+Pro-->	
-		<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Nunito" rel="stylesheet">		
-		<!--This is jQuery from Google CDN and can be found at: https://developers.google.com/speed/libraries/-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!--Javascript (The Javascript file has to be after the jQuery file for it to work)-->
-		<script src="../../scripts/script.js"></script>
-		<!--This Framework is Bootstrap 4. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
-	<body>
-		<!--Navbar-->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="../../index.html">Flow Coding</a>
-				</div>
-				<div class="collapse navbar-collapse" id="mainNavbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="../../index.html">Introductions</a></li>
-						<li><a href="../../A.HTML/index.html">Learn: HTML</a></li>
-						<li class="active"><a href="../../B.CSS/index.html">Learn: CSS</a></li>
-						<li><a href="../../All-together.html">Create</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!--Second Navbar-->
-		<nav class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#secondnavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="navbar-collapse collapse" id="secondnavbar">
-					<ul class="nav navbar-nav navbar-right nav-pills">
-						<li><a href="J-Creating-your-first-CSS-styles.html">Your First CSS Styles</a></li>
-						<li><a href="K-Common-CSS-styles.html">Common CSS Styles</a></li>
-						<li class="active"><a href="L-Classes-and-ids.html">Classes and Ids</a></li>
-						<li><a href="M-Divs-and-spans.html">Divs and Spans</a></li>
-					</ul>
-				</div>
-			</div>
-
-		</nav>
-		<!--Main Sign-->
-		<div class="shadowblack textwhite jumbotron text-center">
-			<div class="jumbotron-content">
-				<h1>Classes and Ids</h1>
-			</div>
-		</div>
-		<div class="pagecontent bg-white">
-			<!--MainContent-->
-			<div class= "container-fluid bg-grey textwhite text-justify">
-				<h3 class="text-center">
-					Classes and IDs are great ways to choose what kind of CSS you want applied on your selector. Wowie.
-				</h3>
-			</div>
-			<div class= "container-fluid text-justify">
-				<h2 class="text-center">
-					Classes.
-				</h2>
-				<p>
-					The .class selector selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class. You can also specify that only specific HTML elements should be affected by a class. To do this, start with the element name, then write the period (.) character, followed by the name of the class (look at Example 1 below). HTML elements can also refer to more than one class (look at Example 2 below).
-				</p>
-				<p>
-					e.g. 1:
-				</p>
-				<p>
-					CSS:
-				</p>
-				<pre>
+   <head>
+      <title>FlowCoding-HowToCodeCSS-ClassandIds</title>
+      <meta charset="UTF-8">
+      <!--CSS-->
+      <link rel="stylesheet" href="../../styles/shared-style.css"/>
+      <link rel="stylesheet" href="../../styles/sub-css-style.css"/>
+      <!--Favicon (Code From Us, Generated at https://www.favicon-generator.org and Converted by http://www.favicomatic.com-->
+      <link rel="icon" type="image/png" href="../../images/favicon/favicon-32x32.png" sizes="32x32" />
+      <link rel="icon" type="image/png" href="../../images/favicon/favicon-16x16.png" sizes="16x16" />
+      <!--Font Used Is Anonymous Pro from Google Font and can be Found at: https://fonts.google.com/specimen/Anonymous+Pro-->	
+      <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet"/>
+      <!--Font Used Is Nunito from Google Font and can be Found at: https://fonts.google.com/specimen/Nunito-->	
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <!--This is jQuery from Google CDN and can be found at: https://developers.google.com/speed/libraries/-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!--Javascript (The Javascript file has to be after the jQuery file for it to work)-->
+      <script src="../../scripts/script.js"></script>
+      <!--This Framework is Bootstrap. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body id="top">
+      <!--Navbar-->
+      <div class="navbar navbar-default navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="../../index.html">Flow Coding</a>
+            </div>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../../index.html">Introductions</a></li>
+                  <li><a href="../../A.HTML/index.html">Learn: HTML</a></li>
+                  <li class="active"><a href="../../B.CSS/index.html">Learn: CSS</a></li>
+                  <li><a href="../../All-together.html">Final Activity</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--Second Navbar-->
+      <div class="navbar-second navbar navbar-default navbar-fixed-top" id="navbar-two" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#secondnavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="navbar-collapse collapse" id="secondnavbar">
+               <ul class="nav navbar-nav navbar-right nav-pills">
+                  <li><a href="J-Creating-your-first-CSS-styles.html">Your First CSS Styles</a></li>
+                  <li><a href="K-Common-CSS-styles.html">Common CSS Styles</a></li>
+                  <li class="active"><a href="L-Classes-and-ids.html">Classes and Ids</a></li>
+                  <li><a href="M-Divs-and-spans.html">Divs and Spans</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!--Main Sign-->
+      <div class="textwhite jumbotron text-center">
+         <div class="jumbotron-content">
+            <h1>Classes and Ids</h1>
+         </div>
+      </div>
+      <div class="pagecontent bg-white">
+         <!--MainContent-->
+         <div class= "container-fluid bg-grey textwhite text-justify">
+            <h3 class="text-center">
+               Classes and IDs are great ways to choose what kind of CSS you want applied on your selector. Wowie.
+            </h3>
+         </div>
+         <div class= "container-fluid text-justify">
+            <h2 class="text-center">
+               Classes.
+            </h2>
+            <p>
+               The .class selector selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class. You can also specify that only specific HTML elements should be affected by a class. To do this, start with the element name, then write the period (.) character, followed by the name of the class (look at Example 1 below). HTML elements can also refer to more than one class (look at Example 2 below).
+            </p>
+            <p>
+               e.g. 1:
+            </p>
+            <p>
+               CSS:
+            </p>
+            <pre>
 p.hometown {
 	background-color: yellow;
 }</pre>
-				<p>
-					HTML:
-				</p>
-				<pre>
-				&lt;p&gt; class="hometown">I live in Duckburg.&lt;/p&gt;</pre>
-				<p>
-					This will make "I live in Duckburg." have a yellow background.
-				</p>
-				<p>
-					e.g. 2
-					This <code>&lt;p&gt;</code> element will be styled according to class="center" AND to class="large":
-				</p>
-				<pre>
+            <p>
+               HTML:
+            </p>
+            <pre>
+&lt;p&gt; class="hometown">I live in Duckburg.&lt;/p&gt;</pre>
+            <p>
+               This will make "I live in Duckburg." have a yellow background.
+            </p>
+            <p>
+               e.g. 2
+               This <code>&lt;p&gt;</code> element will be styled according to class="center" AND to class="large":
+            </p>
+            <pre>
 &lt;p class="center large"&gt;
 This paragraph refers to two classes.
 &lt;/p&gt;
 </pre>
-				<h2 class="text-center">
-					IDs!
-				</h2>
-				<p>
-					IDs are used with an #ID tag that can be used to identify something on a page. (we will use this example):
-				</p>
-				<p>
-					CSS:
-				</p>
-				<pre>
+            <h2 class="text-center">
+               IDs!
+            </h2>
+            <p>
+               IDs are used with an #ID tag that can be used to identify something on a page. (we will use this example):
+            </p>
+            <p>
+               CSS:
+            </p>
+            <pre>
 #firstname {
     background-color: yellow;
 }</pre>
-				<p>
-					#IDs can be linked on the same page and are unique to that page only. Classes can be used everywhere. That's essentially how IDs are different to classes. So how to incorporate classes and IDs in CSS and HTML:
-				</p>
-				<pre>
+            <p>
+               #IDs can be linked on the same page and are unique to that page only. Classes can be used everywhere. That's essentially how IDs are different to classes. So how to incorporate classes and IDs in CSS and HTML:
+            </p>
+            <pre>
 #firstname {
     background-color: yellow;
 }</pre>
-				<pre>
-&lt;p id="firstname"&gt;My name is Donald.&lt;/p&lgt;</pre>	
-			</div>
-			<!--Footer/Glossary-->
-			<div class="container-fluid text-center bg-grey textwhite">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<a href="#top">
-							<img src="../../images/uparrow.png" alt="uparrow" width="25"/>
-						</a>
-						<br/>
-						<br/>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-3 text-center">
-						<h4>
-							<strong>Contact Us</strong>
-						</h4>
-						<a href="mailto:sithum.dissanayake@cgs.act.edu.au">
-							<h5><img src="../../images/mailicon.png" width="25"/> Sithum Dissanayake</h5>
-						</a>
-						<a href="mailto:daniel.pan@cgs.act.edu.au">
-							<h5><img src="../../images/mailicon.png" width="25"/> Daniel Pan</h5>
-						</a>
-						<a href="https://twitter.com/Coding_Flow">
-							<h5><img src="../../images/twitterbirdicon.png" width="25"/> @Coding_Flow</h5>
-						</a>
-					</div>
-					<div class="col-sm-3 text-center">
-						<h5><strong>Main Pages</strong></h5>
-						<a href="../../index.html">
-							<h6>Home Page</h6>
-						</a>
-						<a href="../../A.HTML/index.html">
-							<h6>HTML Main Page</h6>
-						</a>
-						<a href="../../B.CSS/index.html">
-							<h6>CSS Main Page</h6>
-						</a>
-						<a href="../../All-together.html">
-							<h6>Final Activity</h6>
-						</a>
-					</div>
-					<div class="col-sm-3 text-center">
-						<h5><strong>HTML Lessons</strong></h5>
-						<a href="../../A.HTML/lessons/C-Creating-your-first-web-page.html">
-							<h6>Creating Your First Web Page</h6>
-						</a>
-						<a href="../../A.HTML/lessons/D-Common-HTML-tags.html">
-							<h6>Common HTML Tags</h6>
-						</a>
-						<a href="../../A.HTML/lessons/E-Images-and-Videos">
-							<h6>Images and Videos</h6>
-						</a>
-						<a href="../../A.HTML/lessons/F-Lists-and-Tables.html">
-							<h6>Lists and Tables</h6>
-						</a>
-						<a href="../../A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
-							<h6>XHTML 1.0 Strict Validation</h6>
-						</a>
-						<a href="../../A.HTML/lessons/H-Multi-page-websites.html">
-							<h6>Multi-page Websites</h6>
-						</a>
-						<a href="../../A.HTML/lessons/I-File-organisation.html">
-							<h6>File Organisation</h6>
-						</a>
-					</div>
-					<div class="col-sm-3 text-center">
-						<h5><strong>CSS Lessons</strong></h5>
-						<a href="../../B.CSS/lessons/J-Creating-your-first-CSS-styles.html">
-							<h6>Creating Your First CSS Styles</h6>
-						</a>
-						<a href="../../B.CSS/lessons/K-Common-CSS-styles.html">
-							<h6>Common CSS Styles</h6>
-						</a>
-						<a href="../../B.CSS/lessons/L-Classes-and-ids.html">
-							<h6>Classes and Ids</h6>
-						</a>
-						<a href="../../B.CSS/lessons/M-Divs-and-spans.html">
-							<h6>Divs and Spans</h6>
-						</a>
-					</div>
-				</div>
-				<br/>
-				<hr/>
-				<h4 class="footer-company-name textwhite"> Copyright &copy; 2018 Flow Coding. All rights reserved.</h4>
-			</div>
-		</div>
-	</body>
+            <pre>
+&lt;p id="firstname"&gt;My name is Donald.&lt;/p&gt;</pre>
+         </div>
+         <!--Footer/Glossary-->
+         <div class="container-fluid text-center bg-grey textwhite">
+            <div class="row">
+               <div class="col-sm-12 text-center">
+                  <a href="#top">
+                  <img src="../../images/footer/uparrow.png" alt="uparrow" width="25"/>
+                  </a>
+                  <br/>
+                  <br/>
+                  <hr/>
+                  <br/>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-3 text-center">
+                  <h4>
+                     <strong>Contact Us</strong>
+                  </h4>
+                  <a href="mailto:sithum.dissanayake@cgs.act.edu.au">
+                     <h5><img src="../../images/footer/mailicon.png" alt="mail-icon" width="25"/> Sithum Dissanayake</h5>
+                  </a>
+                  <a href="mailto:daniel.pan@cgs.act.edu.au">
+                     <h5><img src="../../images/footer/mailicon.png" alt="mail-icon" width="25"/> Daniel Pan</h5>
+                  </a>
+                  <a href="https://twitter.com/Coding_Flow">
+                     <h5><img src="../../images/footer/twitterbirdicon.png" alt="twitter-bird" width="25"/> @Coding_Flow</h5>
+                  </a>
+               </div>
+               <div class="col-sm-3 text-center">
+                  <h5><strong>Main Pages</strong></h5>
+                  <a href="../../index.html">
+                     <h6>Home Page</h6>
+                  </a>
+                  <a href="../../A.HTML/index.html">
+                     <h6>HTML Main Page</h6>
+                  </a>
+                  <a href="../../B.CSS/index.html">
+                     <h6>CSS Main Page</h6>
+                  </a>
+                  <a href="../../All-together.html">
+                     <h6>Final Activity</h6>
+                  </a>
+               </div>
+               <div class="col-sm-3 text-center">
+                  <h5><strong>HTML Lessons</strong></h5>
+                  <a href="../../A.HTML/lessons/C-Creating-your-first-web-page.html">
+                     <h6>Creating Your First Web Page</h6>
+                  </a>
+                  <a href="../../A.HTML/lessons/D-Common-HTML-tags.html">
+                     <h6>Common HTML Tags</h6>
+                  </a>
+                  <a href="../../A.HTML/lessons/E-Images-and-Videos.html">
+                     <h6>Images and Videos</h6>
+                  </a>
+                  <a href="../../A.HTML/lessons/F-Lists-and-Tables.html">
+                     <h6>Lists and Tables</h6>
+                  </a>
+                  <a href="../../A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
+                     <h6>XHTML 1.0 Strict Validation</h6>
+                  </a>
+                  <a href="../../A.HTML/lessons/H-Multi-page-websites.html">
+                     <h6>Multi-page Websites</h6>
+                  </a>
+                  <a href="../../A.HTML/lessons/I-File-organisation.html">
+                     <h6>File Organisation</h6>
+                  </a>
+               </div>
+               <div class="col-sm-3 text-center">
+                  <h5><strong>CSS Lessons</strong></h5>
+                  <a href="../../B.CSS/lessons/J-Creating-your-first-CSS-styles.html">
+                     <h6>Creating Your First CSS Styles</h6>
+                  </a>
+                  <a href="../../B.CSS/lessons/K-Common-CSS-styles.html">
+                     <h6>Common CSS Styles</h6>
+                  </a>
+                  <a href="../../B.CSS/lessons/L-Classes-and-ids.html">
+                     <h6>Classes and Ids</h6>
+                  </a>
+                  <a href="../../B.CSS/lessons/M-Divs-and-spans.html">
+                     <h6>Divs and Spans</h6>
+                  </a>
+               </div>
+            </div>
+            <br/>
+            <hr/>
+            <h4 class="footer-company-name textwhite"> Copyright &copy; 2018 Flow Coding. All rights reserved.</h4>
+         </div>
+      </div>
+   </body>
 </html>

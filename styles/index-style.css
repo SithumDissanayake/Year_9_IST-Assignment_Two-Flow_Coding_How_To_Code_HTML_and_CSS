@@ -1,0 +1,119 @@
+.navbar {
+	font-size: 18px ;
+
+}
+.navbar li a, .navbar .navbar-brand {	
+	font-size: 18px ;
+
+
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	font-size: 18px ;
+
+}
+.navbar-default .navbar-toggle {
+	font-size: 18px ;
+
+}
+.jumbotron{
+	background:#cccccc url('../images/backgrounds/backgroundmain.jpg') no-repeat fixed center;
+	height: 100vh;
+	width: 100vw;
+}
+.jumbotron-content{
+	position: absolute !important;
+	top: 45% !important;
+	left: 50% !important;
+}
+.pagecontent{
+	top: 100vh;
+}
+.www-panel {
+	border: 1px solid #34495e;
+	border-radius:0;
+	transition: box-shadow 0.5s;
+}
+.html-panel {
+	border: 1px solid #e67e22;
+	border-radius:0;
+	transition: box-shadow 0.5s;
+}
+.css-panel {
+	border: 1px solid #3498db;
+	border-radius:0;
+	transition: box-shadow 0.5s;
+}
+
+.www-panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.html-panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.css-panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.www-panel-heading {
+	color: #fff !important;
+	background-color: #2c3e50 !important;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.html-panel-heading {
+	color: #fff !important;
+	background-color: #d35400 !important;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.css-panel-heading {
+	color: #fff !important;
+	background-color: #2980b9 !important;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.www-panel-body {
+	padding: 20px;
+	text-align: Justify;
+	margin: 0px 0px 1.33% 0px;
+
+}
+
+.html-panel-body {
+	padding: 20px;
+	text-align: Justify;
+}
+
+.css-panel-body {
+	padding: 20px;
+	text-align: Justify;
+	margin: 0px 0px 6.45% 0px;
+}
+
+.html-panel-footer{
+	margin: -30px 0px 15px 0px;
+	background-color: #fff !important;
+	color: #fff;
+}
+
+.css-panel-footer {
+	margin: -30px 0px 15px 0px;
+	background-color: #fff !important;
+	color: #fff;
+}
+
+
+

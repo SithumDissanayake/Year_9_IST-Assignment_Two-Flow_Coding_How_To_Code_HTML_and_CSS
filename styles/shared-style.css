@@ -1,0 +1,120 @@
+*{
+	font-family: 'Nunito' !important;
+	font-size: 22px;
+}
+
+.textwhite{
+	color:white !important;
+}
+
+.textblack{
+	color:black !important;
+}
+
+.bg-grey {
+	background-color: #485460 !important;
+}
+.bg-white{
+	background-color: white !important;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #485460 !important;
+	z-index: -1;
+	border: 0;
+	line-height: 1.42 !important;
+	letter-spacing: 2px;
+	border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #1e272e !important;
+	background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+
+.jumbotron{
+	background-size: cover !important;
+	margin-bottom: 0px !important;
+	z-index: 0 !important;
+	position: fixed;
+
+}
+.jumbotron-content{
+	text-shadow: black 0.3em 0.3em 0.3em !important;
+	transform: translate(-50%, -50%) !important;
+	width: 100% !important;
+}
+
+.down-arrow {
+	width:50px;
+	position: absolute;
+	display: block;
+	top: 50vh;
+	left: 48%;
+	transform: translate(-50%, -50%);
+	z-index: 0 !important;
+}
+.container-fluid {
+	padding: 60px 15% !important;
+	line-height: 1.8 !important;
+	width: 100vw;
+}
+
+.pagecontent{
+	z-index: 0 !important;
+	position: absolute;
+} 
+
+.btn {
+	margin: 15px 0;
+	background-color: #222f3e;
+	color: #fff;
+}
+
+.btn:hover{
+	border: 1px solid #222f3e;
+	background-color: #fff !important;
+	color: #222f3e;
+} 
+a:link {
+	color:white;
+	text-decoration: none ;
+}
+
+a:visited {
+	color:white ;
+	text-decoration: none ;
+}
+
+a:hover {
+	color:#66A5AD !important;
+	text-decoration: none !important;
+}
+
+a:active {
+	color:#66A5AD !important;
+	text-decoration: none !important;
+}
+
+pre{
+	display: inline-block;
+	padding: 10px;
+	margin: 10px 0 20px 0;
+	font-family: 'Anonymous Pro', monospace !important;
+	font-size: 0.8em;
+	white-space: pre;
+	word-wrap: normal;
+}
+
+
+
