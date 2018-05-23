@@ -1,3 +1,5 @@
+/* This Validates as CSS level 3 + SVG !*/
+
 .navbar {
 	font-size: 18px ;
 
@@ -27,6 +29,12 @@
 }
 .pagecontent{
 	top: 100vh;
+}
+.intro-container-fluid{
+	padding: 60px 8%;
+	line-height: 2;
+	letter-spacing:0.1px;
+	width: 100vw;
 }
 .www-panel {
 	border: 1px solid #34495e;
