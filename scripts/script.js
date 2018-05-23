@@ -1,3 +1,5 @@
+//Smooth Scroll JavaScript from: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -24,13 +26,15 @@ $(document).ready(function(){
 });
 
 
-function showAnswers() {
-	if (document.getElementById('show-answers').innerHTML === "Show Answers") {
+
+//Code to hide and show the answer for the final activity
+
+function showAnswer() {
+	if (document.getElementById('show-answer').innerHTML === "Show Answer") {
 		document.getElementById('answers').style.display = "initial";
-		document.getElementById('show-answers').innerHTML = "Hide Answers";
+		document.getElementById('show-answer').innerHTML = "Hide Answer";
 	} else {
 		document.getElementById('answers').style.display = "none";
-		document.getElementById('show-answers').innerHTML = "Show Answers";
+		document.getElementById('show-answer').innerHTML = "Show Answer";
 	}
 }
-
