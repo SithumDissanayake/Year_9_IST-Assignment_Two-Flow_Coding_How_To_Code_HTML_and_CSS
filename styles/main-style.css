@@ -68,8 +68,7 @@
 }
 .container-fluid {
 	padding: 60px 15% !important;
-	line-height: 2;
-	letter-spacing:0.1px;
+	line-height: 1.8 !important;
 	width: 100vw;
 }
 
