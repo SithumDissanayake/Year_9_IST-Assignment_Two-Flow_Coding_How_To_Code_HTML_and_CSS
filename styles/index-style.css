@@ -1,6 +1,8 @@
 /* This Validates as CSS level 3 + SVG ! */
 
+
 /* CSS Specific for the Navbar of this page */
+
 .navbar {
 	font-size: 18px ;
 
@@ -19,7 +21,9 @@
 
 }
 
+
 /* CSS Specific for the Main Sign of this page */
+
 .jumbotron{
 	background:#cccccc url('../images/backgrounds/backgroundmain.jpg') no-repeat fixed center;
 	height: 100vh;
@@ -31,7 +35,9 @@
 	left: 50% !important;
 }
 
+
 /* CSS Specific for the Page Content of this page */
+
 .pagecontent{
 	top: 100vh;
 }

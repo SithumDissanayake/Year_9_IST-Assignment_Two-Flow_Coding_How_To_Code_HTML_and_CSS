@@ -1,12 +1,16 @@
 /* This Validates as CSS level 3 + SVG ! */
 
+
 /* This CSS file contains CSS common to all the pages of this website */
+
 *{
 	font-family: 'Nunito' !important;
 	font-size: 22px;
 }
 
+
 /* Common CSS for the Navbar */
+
 .navbar {
 	margin-bottom: 0;
 	background-color: #485460 !important;
@@ -28,13 +32,14 @@
 	color: #fff !important;
 }
 
+
 /* Common CSS for the Main Sign */
+
 .jumbotron{
-	background-size: cover !important:
+	background-size: cover !important;
 	margin-bottom: 0px !important;
 	z-index: 0 !important;
 	position: fixed;
-
 }
 .jumbotron-content{
 	text-shadow: black 0.3em 0.3em 0.3em !important;
@@ -51,7 +56,9 @@
 	z-index: 0 !important;
 }
 
+
 /* Common CSS for the Page Content */
+
 .pagecontent{
 	z-index: 0 !important;
 	position: absolute;
@@ -83,7 +90,9 @@ pre{
 	word-wrap: normal;
 }
 
+
 /* Common CSS for buttons */
+
 .btn {
 	margin: 15px 0;
 	background-color: #222f3e;
@@ -95,7 +104,9 @@ pre{
 	color: #222f3e;
 } 
 
+
 /* Common CSS for links */
+
 a:link {
 	color:white;
 	text-decoration: none ;
